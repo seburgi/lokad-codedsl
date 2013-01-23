@@ -38,19 +38,55 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
         </div>
 
-        <p><strong>Lokad Code DSL</strong> (<a href="http://lokad.github.com/lokad-codedsl/">homepage</a>) is shared as open source project by <a href="http://www.lokad.com">Lokad</a> in hopes that it would benefit the community. </p>
+        <p>Lokad Contracts DSL is an optional console utility that you can run in the background. It 
+tracks changes to files with special compact syntax and updates CS file with message 
+contract definitions. </p>
 
-<p>You can get download binary from <a href="https://github.com/Lokad/lokad-codedsl/downloads">github downloads</a>.</p>
+<p>Changes are immediate upon saving file (and ReSharper immediately picks them). This is an improved 
+version of Lokad Code DSL, it supports identities and can auto-generate interfaces for 
+aggregates and aggregate state classes.</p>
 
-<h2>About</h2>
+<p><strong>Was</strong>:</p>
 
-<p>Lokad Contracts DSL is an optional console utility that you can run in the background. It tracks changes to files with special compact syntax and updates CS file. Changes are immediate upon saving file (and ReSharper immediately picks them). This is an improved version of Lokad Code DSL, it supports identities and can auto-generate interfaces for aggregates and aggregate state classes.</p>
+<div class="highlight"><pre><span class="n">AddSecurityPassword</span><span class="p">?(</span><span class="n">SecurityId</span> <span class="n">id</span><span class="p">,</span> <span class="kt">string</span> <span class="n">displayName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">login</span><span class="p">,</span> <span class="kt">string</span> <span class="n">password</span><span class="p">)</span>
+</pre></div>
 
-<p>Lokad Code DSL is used by <a href="http://lokad.github.com/lokad-cqrs/">Lokad.CQRS</a> (was originally part of it) and is explained in greater detail in <a href="http://beingtheworst.com/">BeingTheWorst Podcast</a> - Episode 12.</p>
+<p><strong>Becomes</strong>:</p>
 
-<p>You can try this out by starting <code>Sample</code> project and then changing <code>Sample\Contracts.ddd</code> (view <a href="http://github.com/Lokad/lokad-codedsl/blob/master/Sample/Contracts.ddd">Contracts.ddd source</a>). Code DSL tool will be regenerating corresponding contracts file as you change and save (view <a href="http://github.com/Lokad/lokad-codedsl/blob/master/Sample/Contracts.cs">Contracts.cs source</a>).</p>
+<div class="highlight"><pre><span class="na">[DataContract(Namespace = "Sample")]</span>
+<span class="k">public</span> <span class="k">partial</span> <span class="k">class</span> <span class="nc">AddSecurityPassword</span> <span class="p">:</span> <span class="n">ICommand</span><span class="p">&lt;</span><span class="n">SecurityId</span><span class="p">&gt;</span>
+<span class="p">{</span>
+<span class="na">    [DataMember(Order = 1)]</span> <span class="k">public</span> <span class="n">SecurityId</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="na">    [DataMember(Order = 2)]</span> <span class="k">public</span> <span class="kt">string</span> <span class="n">DisplayName</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="na">    [DataMember(Order = 3)]</span> <span class="k">public</span> <span class="kt">string</span> <span class="n">Login</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="na">    [DataMember(Order = 4)]</span> <span class="k">public</span> <span class="kt">string</span> <span class="n">Password</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 
-<p>Current DSL code generates contracts classes that are compatible with DataContracts, ServiceStack.JSON and ProtoBuf.</p>
+    <span class="n">AddSecurityPassword</span> <span class="p">()</span> <span class="p">{}</span>
+    <span class="k">public</span> <span class="nf">AddSecurityPassword</span> <span class="p">(</span><span class="n">SecurityId</span> <span class="n">id</span><span class="p">,</span> <span class="kt">string</span> <span class="n">displayName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">login</span><span class="p">,</span> <span class="kt">string</span> <span class="n">password</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Id</span> <span class="p">=</span> <span class="n">id</span><span class="p">;</span>
+        <span class="n">DisplayName</span> <span class="p">=</span> <span class="n">displayName</span><span class="p">;</span>
+        <span class="n">Login</span> <span class="p">=</span> <span class="n">login</span><span class="p">;</span>
+        <span class="n">Password</span> <span class="p">=</span> <span class="n">password</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Lokad Code DSL is used by <a href="http://lokad.github.com/lokad-cqrs/">Lokad.CQRS</a> (was originally part of it) 
+and is explained in greater detail in <a href="http://beingtheworst.com/">BeingTheWorst Podcast</a> - Episode 12.</p>
+
+<p>You can try this out by starting <code>Sample</code> project and then changing <code>Sample\Contracts.ddd</code> 
+(view <a href="http://github.com/Lokad/lokad-codedsl/blob/master/Sample/Contracts.ddd">Contracts.ddd source</a>). 
+Code DSL tool will be regenerating corresponding contracts file as you change and 
+save (view <a href="http://github.com/Lokad/lokad-codedsl/blob/master/Sample/Contracts.cs">Contracts.cs source</a>).</p>
+
+<p>Current DSL code generates contracts classes that are compatible with DataContracts, 
+ServiceStack.JSON and ProtoBuf.</p>
+
+<p>You can get download binary from <a href="https://github.com/Lokad/lokad-codedsl/downloads">github downloads</a>. Sometimes even later stable version would be available by getting latest source code and building.</p>
+
+<p><strong>Lokad Code DSL</strong> (<a href="http://lokad.github.com/lokad-codedsl/">homepage</a>) is shared as open 
+source project by <a href="http://www.lokad.com">Lokad</a> in hopes that it would benefit the community. </p>
 
 <h2>Syntax Definitions</h2>
 
@@ -58,158 +94,166 @@
 
 <p>Add namespace for our messages  </p>
 
-<pre><code>namespace NameSpace
-</code></pre>
+<div class="highlight"><pre><span class="k">namespace</span> <span class="nn">NameSpace</span>
+</pre></div>
 
 <p><strong>Result:</strong></p>
 
-<pre><code>namespace NameSpace  
-{  
-...  
-}
-</code></pre>
+<div class="highlight"><pre><span class="k">namespace</span> <span class="nn">NameSpace</span>  
+<span class="p">{</span>  
+<span class="p">...</span>  
+<span class="p">}</span>
+</pre></div>
 
 <h3>Data contract namespace</h3>
 
-<pre><code>extern "Lokad"
-</code></pre>
+<div class="highlight"><pre><span class="k">extern</span> <span class="s">"Lokad"</span>
+</pre></div>
 
 <p><strong>Result:</strong></p>
 
-<pre><code>[DataContract(Namespace = "Lokad")]
-</code></pre>
+<div class="highlight"><pre><span class="na">[DataContract(Namespace = "Lokad")]</span>
+</pre></div>
 
 <h3>Simple Contract definitions</h3>
 
-<pre><code>Universe(UniverseId Id, string name)
-</code></pre>
+<div class="highlight"><pre><span class="n">Universe</span><span class="p">(</span><span class="n">UniverseId</span> <span class="n">Id</span><span class="p">,</span> <span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
 
 <p><strong>Result:</strong></p>
 
-<pre><code>[DataContract(Namespace = "Lokad")]
-public partial class Universe
-{
-    [DataMember(Order = 1)] public UniverseId Id { get; private set; }
-    [DataMember(Order = 2)] public string Name { get; private set; }
+<div class="highlight"><pre><span class="na">[DataContract(Namespace = "Lokad")]</span>
+<span class="k">public</span> <span class="k">partial</span> <span class="k">class</span> <span class="nc">Universe</span>
+<span class="p">{</span>
+<span class="na">    [DataMember(Order = 1)]</span> <span class="k">public</span> <span class="n">UniverseId</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="na">    [DataMember(Order = 2)]</span> <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 
-    Universe () {}
-    public Universe (UniverseId id, string name)
-    {
-        Id = id;
-        Name = name;
-    }
-}
-</code></pre>
+    <span class="n">Universe</span> <span class="p">()</span> <span class="p">{}</span>
+    <span class="k">public</span> <span class="nf">Universe</span> <span class="p">(</span><span class="n">UniverseId</span> <span class="n">id</span><span class="p">,</span> <span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Id</span> <span class="p">=</span> <span class="n">id</span><span class="p">;</span>
+        <span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
 
 <h3>Interface Shortcuts</h3>
 
-<p>In order to use interface in contract classes, need to create interface shortcut first, definition of interface IIdentity must be contained in C# file</p>
+<p>In order to use interface in contract classes, need to create interface shortcut first, definition
+of interface IIdentity must be contained in C# file</p>
 
-<pre><code>if ! = IIdentity
-</code></pre>
+<div class="highlight"><pre><span class="k">if</span> <span class="p">!</span> <span class="p">=</span> <span class="n">IIdentity</span>
+</pre></div>
 
 <p>For the next step define simple class with one property</p>
 
-<pre><code>UniverseId!(long id)
-</code></pre>
+<div class="highlight"><pre><span class="n">UniverseId</span><span class="p">!(</span><span class="kt">long</span> <span class="n">id</span><span class="p">)</span>
+</pre></div>
 
 <p><strong>Result:</strong></p>
 
-<pre><code>[DataContract(Namespace = "Lokad")]
-public partial class UniverseId : IIdentity
-{
-    [DataMember(Order = 1)] public long Id { get; private set; }
+<div class="highlight"><pre><span class="na">[DataContract(Namespace = "Lokad")]</span>
+<span class="k">public</span> <span class="k">partial</span> <span class="k">class</span> <span class="nc">UniverseId</span> <span class="p">:</span> <span class="n">IIdentity</span>
+<span class="p">{</span>
+<span class="na">    [DataMember(Order = 1)]</span> <span class="k">public</span> <span class="kt">long</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 
-    UniverseId () {}
-    public UniverseId (long id)
-    {
-        Id = id;
-    }
-}
-</code></pre>
+    <span class="n">UniverseId</span> <span class="p">()</span> <span class="p">{}</span>
+    <span class="k">public</span> <span class="nf">UniverseId</span> <span class="p">(</span><span class="kt">long</span> <span class="n">id</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Id</span> <span class="p">=</span> <span class="n">id</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
 
 <h3>Method Argument Constants</h3>
 
-<p>Method arguments constants allow us to define constant to replace method argument definition. For example, now we can use term <code>dateUtc</code> instead full definition with argument type and name.</p>
+<p>Method arguments constants allow us to define constant to replace method argument definition. For 
+example, now we can use term <code>dateUtc</code> instead full definition with argument type and name.</p>
 
-<pre><code>const dateUtc = DateTime dateUtc
-</code></pre>
+<div class="highlight"><pre><span class="k">const</span> <span class="n">dateUtc</span> <span class="p">=</span> <span class="n">DateTime</span> <span class="n">dateUtc</span>
+</pre></div>
 
 <h2>Application service &amp; state</h2>
 
 <p>Definition of application service must begining with interface key.</p>
 
-<pre><code>interface Universe(UniverseId Id)
-{
-    // define shortcut for commands
-    if ? = IUniverseCommand
-    // define shortcut for events
-    if ! = IUniverseEvent&lt;UniverseId&gt;
+<div class="highlight"><pre><span class="k">interface</span> <span class="nf">Universe</span><span class="p">(</span><span class="n">UniverseId</span> <span class="n">Id</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// define shortcut for commands</span>
+    <span class="k">if</span> <span class="p">?</span> <span class="p">=</span> <span class="n">IUniverseCommand</span>
+    <span class="c1">// define shortcut for events</span>
+    <span class="k">if</span> <span class="p">!</span> <span class="p">=</span> <span class="n">IUniverseEvent</span><span class="p">&lt;</span><span class="n">UniverseId</span><span class="p">&gt;</span>
 
-    CreateUniverse?(name)
-        // override ToString() for command
-        explicit "Create universe - {name}"
-        UniverseCreated!(name)
-        // override ToString() for event
-        explicit "Universe {name} created"
-}
-</code></pre>
+    <span class="n">CreateUniverse</span><span class="p">?(</span><span class="n">name</span><span class="p">)</span>
+        <span class="c1">// override ToString() for command</span>
+        <span class="k">explicit</span> <span class="s">"Create universe - {name}"</span>
+        <span class="n">UniverseCreated</span><span class="p">!(</span><span class="n">name</span><span class="p">)</span>
+        <span class="c1">// override ToString() for event</span>
+        <span class="k">explicit</span> <span class="s">"Universe {name} created"</span>
+<span class="p">}</span>
+</pre></div>
 
 <p><strong>Result:</strong></p>
 
-<pre><code>public interface IUniverseApplicationService
-{
-    void When(CreateUniverse c);
-}
+<div class="highlight"><pre><span class="k">public</span> <span class="k">interface</span> <span class="n">IUniverseApplicationService</span>
+<span class="p">{</span>
+    <span class="k">void</span> <span class="nf">When</span><span class="p">(</span><span class="n">CreateUniverse</span> <span class="n">c</span><span class="p">);</span>
+<span class="p">}</span>
 
-public interface IUniverseState
-{
-    void When(UniverseCreated e);
-}
-</code></pre>
+<span class="k">public</span> <span class="k">interface</span> <span class="n">IUniverseState</span>
+<span class="p">{</span>
+    <span class="k">void</span> <span class="nf">When</span><span class="p">(</span><span class="n">UniverseCreated</span> <span class="n">e</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
 
 <p>Command and corresponding event</p>
 
-<pre><code>[DataContract(Namespace = "Lokad")]
-public partial class CreateUniverse : IUniverseCommand
-{
-    [DataMember(Order = 1)] public UniverseId Id { get; private set; }
-    [DataMember(Order = 2)] public string Name { get; private set; }
+<div class="highlight"><pre><span class="na">[DataContract(Namespace = "Lokad")]</span>
+<span class="k">public</span> <span class="k">partial</span> <span class="k">class</span> <span class="nc">CreateUniverse</span> <span class="p">:</span> <span class="n">IUniverseCommand</span>
+<span class="p">{</span>
+<span class="na">    [DataMember(Order = 1)]</span> <span class="k">public</span> <span class="n">UniverseId</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="na">    [DataMember(Order = 2)]</span> <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 
-    CreateUniverse () {}
-    public CreateUniverse (UniverseId id, string name)
-    {
-        Id = id;
-        Name = name;
-    }
+    <span class="n">CreateUniverse</span> <span class="p">()</span> <span class="p">{}</span>
+    <span class="k">public</span> <span class="nf">CreateUniverse</span> <span class="p">(</span><span class="n">UniverseId</span> <span class="n">id</span><span class="p">,</span> <span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Id</span> <span class="p">=</span> <span class="n">id</span><span class="p">;</span>
+        <span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    public override string ToString()
-    {
-        return string.Format(@"Create universe - {0}", Name);
-    }
-}
+    <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="nf">ToString</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">@"Create universe - {0}"</span><span class="p">,</span> <span class="n">Name</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-[DataContract(Namespace = "Lokad")]
-public partial class UniverseCreated : IUniverseEvent&lt;UniverseId&gt;
-{
-    [DataMember(Order = 1)] public UniverseId Id { get; private set; }
-    [DataMember(Order = 2)] public string Name { get; private set; }
+<span class="na">[DataContract(Namespace = "Lokad")]</span>
+<span class="k">public</span> <span class="k">partial</span> <span class="k">class</span> <span class="nc">UniverseCreated</span> <span class="p">:</span> <span class="n">IUniverseEvent</span><span class="p">&lt;</span><span class="n">UniverseId</span><span class="p">&gt;</span>
+<span class="p">{</span>
+<span class="na">    [DataMember(Order = 1)]</span> <span class="k">public</span> <span class="n">UniverseId</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="na">    [DataMember(Order = 2)]</span> <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 
-    UniverseCreated () {}
-    public UniverseCreated (UniverseId id, string name)
-    {
-        Id = id;
-        Name = name;
-    }
+    <span class="n">UniverseCreated</span> <span class="p">()</span> <span class="p">{}</span>
+    <span class="k">public</span> <span class="nf">UniverseCreated</span> <span class="p">(</span><span class="n">UniverseId</span> <span class="n">id</span><span class="p">,</span> <span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Id</span> <span class="p">=</span> <span class="n">id</span><span class="p">;</span>
+        <span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    public override string ToString()
-    {
-        return string.Format(@"Universe {0} created", Name);
-    }
-}
-</code></pre>
+    <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="nf">ToString</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">@"Universe {0} created"</span><span class="p">,</span> <span class="n">Name</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
 
-<h2>Editor customization</h2>
+<h2>Syntax Highlights</h2>
+
+<p>Syntax used in the DSL tool is derived from keywords in C++ and C#. This means, that
+any text editor could provide nice highlighting, if you use language color settings
+from C++ or C#.</p>
+
+<p>Here's how DSL source code might look like:</p>
 
 <table>
 <tr>
@@ -222,13 +266,18 @@ public partial class UniverseCreated : IUniverseEvent&lt;UniverseId&gt;
 </tr>
 </table><p><strong>Visual Studio 2010 settings</strong></p>
 
+<p>Here are the settings to set up in Visual Studio:</p>
+
 <p><img src="https://github.com/Lokad/lokad-codedsl/raw/master/Docs/vs2010_settings.PNG" alt="Visual Studio settings"></p>
 
 <h2>Related articles</h2>
 
-<p><a href="http://abdullin.com/journal/2012/7/25/improved-dsl-syntax-for-ddd-and-event-sourcing.html">Improved DSL Syntax for DDD and Event Sourcing</a></p>
-
-<h2>Feedback</h2>
+<ul>
+<li>
+<strong>Tutorial</strong>: <a href="http://zbz5.net/extending-lokad-dsl-tool">Extending Lokad DSL Tool</a> by <a href="https://twitter.com/vidarls">Vidar Løvbrekke Sømme</a>
+</li>
+<li><a href="http://abdullin.com/journal/2012/7/25/improved-dsl-syntax-for-ddd-and-event-sourcing.html">Improved DSL Syntax for DDD and Event Sourcing</a></li>
+</ul><h2>Feedback</h2>
 
 <p>Please, feel free to drop feedback in the <a href="https://groups.google.com/forum/#!forum/lokad">Lokad Community</a>.</p>
       </section>
