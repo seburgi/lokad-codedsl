@@ -164,6 +164,11 @@ namespace Lokad.CodeDsl
                     var text = t.GetChild(0).Text;
                     context.CurrentExtern = text;
                     break;
+                case MessageContractsLexer.TemplateToken:
+                    var templateName = t.GetChild(0).Text;
+                    var value = t.GetChild(1).Text.Trim('"');
+                    context.Templates[templateName] = value;
+                    break;
                 case MessageContractsLexer.UsingToken:
                     var us = string.Join(".", t.Children().Select(s => s.Text));
                     context.Using.Add(us);

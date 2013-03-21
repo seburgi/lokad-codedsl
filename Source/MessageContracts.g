@@ -23,6 +23,7 @@ tokens
 	NamespaceToken;
 	ExternToken;
 	UsingToken;
+	TemplateToken;
 }
 
 @lexer::namespace { MessageContracts }
@@ -39,6 +40,7 @@ declaration
 	| entity_declaration
 	| namespace_declaration	
 	| extern_declaration
+	| template_declaration
 	| using_declaration
 	;
 
@@ -82,6 +84,9 @@ representation
 	
 extern_declaration
     :   EXTERN STRING ';' -> ^(ExternToken STRING);
+
+template_declaration
+    :   ID '=' STRING ';' -> ^(TemplateToken ID STRING);
 
 EXPLICIT	
 	:	'explicit';

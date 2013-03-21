@@ -3,6 +3,9 @@ namespace Lokad
 // define data contract namespace for all classes
 extern "Lokad"
 
+ClassNameTemplate = @"[DataContract(Namespace = {1})]
+    public partial class {0}"
+
 // define shortcut for interface IIdentity
 if ! = IIdentity
 

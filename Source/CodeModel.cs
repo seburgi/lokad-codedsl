@@ -6,6 +6,7 @@ namespace Lokad.CodeDsl
     public sealed class Context
     {
         public IDictionary<string, Fragment> Fragments = new Dictionary<string, Fragment>();
+        public IDictionary<string, string> Templates = new Dictionary<string, string>();
         public IList<Message> Contracts = new List<Message>();
         //public IDictionary<string,string> Modifiers = new Dictionary<string, string>();
 
@@ -18,7 +19,6 @@ namespace Lokad.CodeDsl
         }
 
         public Entity CurrentEntity { get { return Entities.Peek(); } }
-
         public string CurrentNamespace = "Lokad.Contracts";
         public string CurrentExtern = "Lokad.Contracts";
         public IList<string> Using; 

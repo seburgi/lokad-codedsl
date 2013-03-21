@@ -25,15 +25,31 @@ public sealed class {0}";
             MemberTemplate = @"[ProtoMember({0})] public readonly {1} {2};";
 
             TemplateForInterfaceName = "public interface I{0}";
-            TemplateForInterfaceMember = "void When({0} c)";
+            TemplateForInterfaceMember = "void When({0} {1});";
             GenerateInterfaceForEntityWithModifiers = "none";
-            //
         }
 
         public void Generate(Context context, IndentedTextWriter outer)
         {
-            var writer = new CodeWriter(outer);
+            // Apply templates
+            foreach (var template in context.Templates)
+            {
+                if(String.IsNullOrWhiteSpace(template.Key) || String.IsNullOrWhiteSpace(template.Value)) continue;
 
+                var propertyInfo = GetType().GetProperty(template.Key);
+                if(propertyInfo == null) continue;
+
+                try
+                {
+                    propertyInfo.SetValue(this, template.Value, null);
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Error when setting value for template '{0}", template.Key);
+                }
+            }
+
+            var writer = new CodeWriter(outer);
             
             foreach (var source in context.Using.Distinct().OrderBy(s => s))
             {
@@ -218,7 +234,7 @@ public sealed class {0}";
                 writer.Indent += 1;
                 foreach (var contract in matches)
                 {
-                    writer.WriteLine("void When({0} {1});", contract.Name, member == "!" ? "e" : "c");
+                    writer.WriteLine(TemplateForInterfaceMember, contract.Name, member == "!" ? "e" : "c");
                 }
                 writer.Indent -= 1;
                 writer.WriteLine("}");
