@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// $ANTLR 3.4 lokad-codedsl\\Source\\MessageContracts.g 2013-03-21 08:11:24
+// $ANTLR 3.4 D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g 2013-03-27 09:44:57
 
 // The variable 'variable' is assigned but its value is never used.
 #pragma warning disable 168, 219
@@ -34,50 +34,52 @@ namespace  MessageContracts
 public partial class MessageContractsParser : Antlr.Runtime.Parser
 {
 	internal static readonly string[] tokenNames = new string[] {
-		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "BlockToken", "COMMENT", "CONST", "CommandToken", "DisctionaryToken", "ESC_SEQ", "EXPLICIT", "EXTERN", "EntityDefinition", "EventToken", "ExternToken", "FragmentEntry", "FragmentGroup", "FragmentReference", "HEX_DIGIT", "ID", "IF", "INT", "INTERFACE", "MemberToken", "Modifier", "ModifierDefinition", "NAMESPACE", "NamespaceToken", "OCTAL_ESC", "STRING", "StringRepresentationToken", "TemplateToken", "TypeToken", "UNICODE_ESC", "USING", "UsingToken", "WS", "'('", "')'", "','", "'.'", "';'", "'='", "'{'", "'}'"
+		"<invalid>", "<EOR>", "<DOWN>", "<UP>", "BlockToken", "CLASS", "COMMENT", "CONST", "ClassToken", "CommandToken", "DisctionaryToken", "ESC_SEQ", "EXPLICIT", "EXTERN", "EntityDefinition", "EventToken", "ExternToken", "FragmentEntry", "FragmentGroup", "FragmentReference", "HEX_DIGIT", "ID", "IF", "INT", "INTERFACE", "MemberToken", "Modifier", "ModifierDefinition", "NAMESPACE", "NamespaceToken", "OCTAL_ESC", "STRING", "StringRepresentationToken", "TemplateToken", "TypeToken", "UNICODE_ESC", "USING", "UsingToken", "WS", "'('", "')'", "','", "'.'", "';'", "'='", "'{'", "'}'"
 	};
 	public const int EOF=-1;
-	public const int T__37=37;
-	public const int T__38=38;
 	public const int T__39=39;
 	public const int T__40=40;
 	public const int T__41=41;
 	public const int T__42=42;
 	public const int T__43=43;
 	public const int T__44=44;
+	public const int T__45=45;
+	public const int T__46=46;
 	public const int BlockToken=4;
-	public const int COMMENT=5;
-	public const int CONST=6;
-	public const int CommandToken=7;
-	public const int DisctionaryToken=8;
-	public const int ESC_SEQ=9;
-	public const int EXPLICIT=10;
-	public const int EXTERN=11;
-	public const int EntityDefinition=12;
-	public const int EventToken=13;
-	public const int ExternToken=14;
-	public const int FragmentEntry=15;
-	public const int FragmentGroup=16;
-	public const int FragmentReference=17;
-	public const int HEX_DIGIT=18;
-	public const int ID=19;
-	public const int IF=20;
-	public const int INT=21;
-	public const int INTERFACE=22;
-	public const int MemberToken=23;
-	public const int Modifier=24;
-	public const int ModifierDefinition=25;
-	public const int NAMESPACE=26;
-	public const int NamespaceToken=27;
-	public const int OCTAL_ESC=28;
-	public const int STRING=29;
-	public const int StringRepresentationToken=30;
-	public const int TemplateToken=31;
-	public const int TypeToken=32;
-	public const int UNICODE_ESC=33;
-	public const int USING=34;
-	public const int UsingToken=35;
-	public const int WS=36;
+	public const int CLASS=5;
+	public const int COMMENT=6;
+	public const int CONST=7;
+	public const int ClassToken=8;
+	public const int CommandToken=9;
+	public const int DisctionaryToken=10;
+	public const int ESC_SEQ=11;
+	public const int EXPLICIT=12;
+	public const int EXTERN=13;
+	public const int EntityDefinition=14;
+	public const int EventToken=15;
+	public const int ExternToken=16;
+	public const int FragmentEntry=17;
+	public const int FragmentGroup=18;
+	public const int FragmentReference=19;
+	public const int HEX_DIGIT=20;
+	public const int ID=21;
+	public const int IF=22;
+	public const int INT=23;
+	public const int INTERFACE=24;
+	public const int MemberToken=25;
+	public const int Modifier=26;
+	public const int ModifierDefinition=27;
+	public const int NAMESPACE=28;
+	public const int NamespaceToken=29;
+	public const int OCTAL_ESC=30;
+	public const int STRING=31;
+	public const int StringRepresentationToken=32;
+	public const int TemplateToken=33;
+	public const int TypeToken=34;
+	public const int UNICODE_ESC=35;
+	public const int USING=36;
+	public const int UsingToken=37;
+	public const int WS=38;
 
 	#if ANTLR_DEBUG
 		private static readonly bool[] decisionCanBacktrack =
@@ -115,7 +117,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	}
 
 	public override string[] TokenNames { get { return MessageContractsParser.tokenNames; } }
-	public override string GrammarFileName { get { return "lokad-codedsl\\Source\\MessageContracts.g"; } }
+	public override string GrammarFileName { get { return "D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g"; } }
 
 
 	[Conditional("ANTLR_TRACE")]
@@ -133,7 +135,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_program() {}
 
 	// $ANTLR start "program"
-	// lokad-codedsl\\Source\\MessageContracts.g:32:1: program : ( declaration )+ ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:33:1: program : ( declaration )+ ;
 	[GrammarRule("program")]
 	private AstParserRuleReturnScope<object, IToken> program()
 	{
@@ -149,17 +151,17 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 
 		try { DebugEnterRule(GrammarFileName, "program");
-		DebugLocation(32, 1);
+		DebugLocation(33, 1);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:33:2: ( ( declaration )+ )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:34:2: ( ( declaration )+ )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:33:4: ( declaration )+
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:34:4: ( declaration )+
 			{
 			root_0 = (object)adaptor.Nil();
 
-			DebugLocation(33, 4);
-			// lokad-codedsl\\Source\\MessageContracts.g:33:4: ( declaration )+
+			DebugLocation(34, 4);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:34:4: ( declaration )+
 			int cnt1=0;
 			try { DebugEnterSubRule(1);
 			while (true)
@@ -168,7 +170,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				try { DebugEnterDecision(1, decisionCanBacktrack[1]);
 				int LA1_0 = input.LA(1);
 
-				if ((LA1_0==CONST||LA1_0==EXTERN||(LA1_0>=ID && LA1_0<=IF)||LA1_0==INTERFACE||LA1_0==NAMESPACE||LA1_0==USING))
+				if ((LA1_0==CLASS||LA1_0==CONST||LA1_0==EXTERN||(LA1_0>=ID && LA1_0<=IF)||LA1_0==INTERFACE||LA1_0==NAMESPACE||LA1_0==USING))
 				{
 					alt1 = 1;
 				}
@@ -179,10 +181,10 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// lokad-codedsl\\Source\\MessageContracts.g:33:4: declaration
+					// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:34:4: declaration
 					{
-					DebugLocation(33, 4);
-					PushFollow(Follow._declaration_in_program121);
+					DebugLocation(34, 4);
+					PushFollow(Follow._declaration_in_program125);
 					declaration1=declaration();
 					PopFollow();
 
@@ -228,7 +230,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("program", 1);
 			LeaveRule_program();
 	    }
-	 	DebugLocation(34, 1);
+	 	DebugLocation(35, 1);
 		} finally { DebugExitRule(GrammarFileName, "program"); }
 		return retval;
 
@@ -242,7 +244,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_declaration() {}
 
 	// $ANTLR start "declaration"
-	// lokad-codedsl\\Source\\MessageContracts.g:36:1: declaration : ( modifier_declaration | frag_declaration | type_declaration | entity_declaration | namespace_declaration | extern_declaration | template_declaration | using_declaration );
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:37:1: declaration : ( modifier_declaration | frag_declaration | type_declaration | entity_declaration | namespace_declaration | extern_declaration | template_declaration | using_declaration | class_declaration );
 	[GrammarRule("declaration")]
 	private AstParserRuleReturnScope<object, IToken> declaration()
 	{
@@ -262,14 +264,15 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	    AstParserRuleReturnScope<object, IToken> extern_declaration7 = default(AstParserRuleReturnScope<object, IToken>);
 	    AstParserRuleReturnScope<object, IToken> template_declaration8 = default(AstParserRuleReturnScope<object, IToken>);
 	    AstParserRuleReturnScope<object, IToken> using_declaration9 = default(AstParserRuleReturnScope<object, IToken>);
+	    AstParserRuleReturnScope<object, IToken> class_declaration10 = default(AstParserRuleReturnScope<object, IToken>);
 
 
 		try { DebugEnterRule(GrammarFileName, "declaration");
-		DebugLocation(36, 1);
+		DebugLocation(37, 1);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:37:2: ( modifier_declaration | frag_declaration | type_declaration | entity_declaration | namespace_declaration | extern_declaration | template_declaration | using_declaration )
-			int alt2=8;
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:38:2: ( modifier_declaration | frag_declaration | type_declaration | entity_declaration | namespace_declaration | extern_declaration | template_declaration | using_declaration | class_declaration )
+			int alt2=9;
 			try { DebugEnterDecision(2, decisionCanBacktrack[2]);
 			switch (input.LA(1))
 			{
@@ -287,11 +290,11 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				{
 				int LA2_3 = input.LA(2);
 
-				if ((LA2_3==42))
+				if ((LA2_3==44))
 				{
 					alt2 = 7;
 				}
-				else if ((LA2_3==Modifier||LA2_3==37))
+				else if ((LA2_3==Modifier||LA2_3==39))
 				{
 					alt2 = 3;
 				}
@@ -323,6 +326,11 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				alt2 = 8;
 				}
 				break;
+			case CLASS:
+				{
+				alt2 = 9;
+				}
+				break;
 			default:
 				{
 					NoViableAltException nvae = new NoViableAltException("", 2, 0, input);
@@ -336,12 +344,12 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// lokad-codedsl\\Source\\MessageContracts.g:37:4: modifier_declaration
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:38:4: modifier_declaration
 				{
 				root_0 = (object)adaptor.Nil();
 
-				DebugLocation(37, 4);
-				PushFollow(Follow._modifier_declaration_in_declaration134);
+				DebugLocation(38, 4);
+				PushFollow(Follow._modifier_declaration_in_declaration138);
 				modifier_declaration2=modifier_declaration();
 				PopFollow();
 
@@ -351,12 +359,12 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// lokad-codedsl\\Source\\MessageContracts.g:38:4: frag_declaration
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:39:4: frag_declaration
 				{
 				root_0 = (object)adaptor.Nil();
 
-				DebugLocation(38, 4);
-				PushFollow(Follow._frag_declaration_in_declaration139);
+				DebugLocation(39, 4);
+				PushFollow(Follow._frag_declaration_in_declaration143);
 				frag_declaration3=frag_declaration();
 				PopFollow();
 
@@ -366,12 +374,12 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// lokad-codedsl\\Source\\MessageContracts.g:39:4: type_declaration
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:40:4: type_declaration
 				{
 				root_0 = (object)adaptor.Nil();
 
-				DebugLocation(39, 4);
-				PushFollow(Follow._type_declaration_in_declaration144);
+				DebugLocation(40, 4);
+				PushFollow(Follow._type_declaration_in_declaration148);
 				type_declaration4=type_declaration();
 				PopFollow();
 
@@ -381,12 +389,12 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				break;
 			case 4:
 				DebugEnterAlt(4);
-				// lokad-codedsl\\Source\\MessageContracts.g:40:4: entity_declaration
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:41:4: entity_declaration
 				{
 				root_0 = (object)adaptor.Nil();
 
-				DebugLocation(40, 4);
-				PushFollow(Follow._entity_declaration_in_declaration149);
+				DebugLocation(41, 4);
+				PushFollow(Follow._entity_declaration_in_declaration153);
 				entity_declaration5=entity_declaration();
 				PopFollow();
 
@@ -396,12 +404,12 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				break;
 			case 5:
 				DebugEnterAlt(5);
-				// lokad-codedsl\\Source\\MessageContracts.g:41:4: namespace_declaration
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:42:4: namespace_declaration
 				{
 				root_0 = (object)adaptor.Nil();
 
-				DebugLocation(41, 4);
-				PushFollow(Follow._namespace_declaration_in_declaration154);
+				DebugLocation(42, 4);
+				PushFollow(Follow._namespace_declaration_in_declaration158);
 				namespace_declaration6=namespace_declaration();
 				PopFollow();
 
@@ -411,12 +419,12 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				break;
 			case 6:
 				DebugEnterAlt(6);
-				// lokad-codedsl\\Source\\MessageContracts.g:42:4: extern_declaration
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:43:4: extern_declaration
 				{
 				root_0 = (object)adaptor.Nil();
 
-				DebugLocation(42, 4);
-				PushFollow(Follow._extern_declaration_in_declaration160);
+				DebugLocation(43, 4);
+				PushFollow(Follow._extern_declaration_in_declaration164);
 				extern_declaration7=extern_declaration();
 				PopFollow();
 
@@ -426,12 +434,12 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				break;
 			case 7:
 				DebugEnterAlt(7);
-				// lokad-codedsl\\Source\\MessageContracts.g:43:4: template_declaration
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:44:4: template_declaration
 				{
 				root_0 = (object)adaptor.Nil();
 
-				DebugLocation(43, 4);
-				PushFollow(Follow._template_declaration_in_declaration165);
+				DebugLocation(44, 4);
+				PushFollow(Follow._template_declaration_in_declaration169);
 				template_declaration8=template_declaration();
 				PopFollow();
 
@@ -441,16 +449,31 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				break;
 			case 8:
 				DebugEnterAlt(8);
-				// lokad-codedsl\\Source\\MessageContracts.g:44:4: using_declaration
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:45:4: using_declaration
 				{
 				root_0 = (object)adaptor.Nil();
 
-				DebugLocation(44, 4);
-				PushFollow(Follow._using_declaration_in_declaration170);
+				DebugLocation(45, 4);
+				PushFollow(Follow._using_declaration_in_declaration174);
 				using_declaration9=using_declaration();
 				PopFollow();
 
 				adaptor.AddChild(root_0, using_declaration9.Tree);
+
+				}
+				break;
+			case 9:
+				DebugEnterAlt(9);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:46:4: class_declaration
+				{
+				root_0 = (object)adaptor.Nil();
+
+				DebugLocation(46, 4);
+				PushFollow(Follow._class_declaration_in_declaration179);
+				class_declaration10=class_declaration();
+				PopFollow();
+
+				adaptor.AddChild(root_0, class_declaration10.Tree);
 
 				}
 				break;
@@ -475,7 +498,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("declaration", 2);
 			LeaveRule_declaration();
 	    }
-	 	DebugLocation(45, 1);
+	 	DebugLocation(47, 1);
 		} finally { DebugExitRule(GrammarFileName, "declaration"); }
 		return retval;
 
@@ -489,7 +512,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_namespace_declaration() {}
 
 	// $ANTLR start "namespace_declaration"
-	// lokad-codedsl\\Source\\MessageContracts.g:47:1: namespace_declaration : NAMESPACE ( ID ( '.' ID )* ) ';' -> ^( NamespaceToken ( ID )* ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:49:1: namespace_declaration : NAMESPACE ( ID ( '.' ID )* ) ';' -> ^( NamespaceToken ( ID )* ) ;
 	[GrammarRule("namespace_declaration")]
 	private AstParserRuleReturnScope<object, IToken> namespace_declaration()
 	{
@@ -501,45 +524,45 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 	    object root_0 = default(object);
 
-	    IToken NAMESPACE10 = default(IToken);
-	    IToken ID11 = default(IToken);
-	    IToken char_literal12 = default(IToken);
-	    IToken ID13 = default(IToken);
-	    IToken char_literal14 = default(IToken);
+	    IToken NAMESPACE11 = default(IToken);
+	    IToken ID12 = default(IToken);
+	    IToken char_literal13 = default(IToken);
+	    IToken ID14 = default(IToken);
+	    IToken char_literal15 = default(IToken);
 
-	    object NAMESPACE10_tree = default(object);
-	    object ID11_tree = default(object);
-	    object char_literal12_tree = default(object);
-	    object ID13_tree = default(object);
-	    object char_literal14_tree = default(object);
-	    RewriteRuleITokenStream stream_41=new RewriteRuleITokenStream(adaptor,"token 41");
-	    RewriteRuleITokenStream stream_40=new RewriteRuleITokenStream(adaptor,"token 40");
+	    object NAMESPACE11_tree = default(object);
+	    object ID12_tree = default(object);
+	    object char_literal13_tree = default(object);
+	    object ID14_tree = default(object);
+	    object char_literal15_tree = default(object);
+	    RewriteRuleITokenStream stream_43=new RewriteRuleITokenStream(adaptor,"token 43");
+	    RewriteRuleITokenStream stream_42=new RewriteRuleITokenStream(adaptor,"token 42");
 	    RewriteRuleITokenStream stream_ID=new RewriteRuleITokenStream(adaptor,"token ID");
 	    RewriteRuleITokenStream stream_NAMESPACE=new RewriteRuleITokenStream(adaptor,"token NAMESPACE");
 
 		try { DebugEnterRule(GrammarFileName, "namespace_declaration");
-		DebugLocation(47, 28);
+		DebugLocation(49, 28);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:48:5: ( NAMESPACE ( ID ( '.' ID )* ) ';' -> ^( NamespaceToken ( ID )* ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:50:5: ( NAMESPACE ( ID ( '.' ID )* ) ';' -> ^( NamespaceToken ( ID )* ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:48:7: NAMESPACE ( ID ( '.' ID )* ) ';'
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:50:7: NAMESPACE ( ID ( '.' ID )* ) ';'
 			{
-			DebugLocation(48, 7);
-			NAMESPACE10=(IToken)Match(input,NAMESPACE,Follow._NAMESPACE_in_namespace_declaration184);  
-			stream_NAMESPACE.Add(NAMESPACE10);
+			DebugLocation(50, 7);
+			NAMESPACE11=(IToken)Match(input,NAMESPACE,Follow._NAMESPACE_in_namespace_declaration193);  
+			stream_NAMESPACE.Add(NAMESPACE11);
 
-			DebugLocation(48, 17);
-			// lokad-codedsl\\Source\\MessageContracts.g:48:17: ( ID ( '.' ID )* )
+			DebugLocation(50, 17);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:50:17: ( ID ( '.' ID )* )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:48:18: ID ( '.' ID )*
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:50:18: ID ( '.' ID )*
 			{
-			DebugLocation(48, 18);
-			ID11=(IToken)Match(input,ID,Follow._ID_in_namespace_declaration187);  
-			stream_ID.Add(ID11);
+			DebugLocation(50, 18);
+			ID12=(IToken)Match(input,ID,Follow._ID_in_namespace_declaration196);  
+			stream_ID.Add(ID12);
 
-			DebugLocation(48, 21);
-			// lokad-codedsl\\Source\\MessageContracts.g:48:21: ( '.' ID )*
+			DebugLocation(50, 21);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:50:21: ( '.' ID )*
 			try { DebugEnterSubRule(3);
 			while (true)
 			{
@@ -547,7 +570,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				try { DebugEnterDecision(3, decisionCanBacktrack[3]);
 				int LA3_0 = input.LA(1);
 
-				if ((LA3_0==40))
+				if ((LA3_0==42))
 				{
 					alt3 = 1;
 				}
@@ -558,15 +581,15 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// lokad-codedsl\\Source\\MessageContracts.g:48:22: '.' ID
+					// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:50:22: '.' ID
 					{
-					DebugLocation(48, 22);
-					char_literal12=(IToken)Match(input,40,Follow._40_in_namespace_declaration190);  
-					stream_40.Add(char_literal12);
+					DebugLocation(50, 22);
+					char_literal13=(IToken)Match(input,42,Follow._42_in_namespace_declaration199);  
+					stream_42.Add(char_literal13);
 
-					DebugLocation(48, 26);
-					ID13=(IToken)Match(input,ID,Follow._ID_in_namespace_declaration192);  
-					stream_ID.Add(ID13);
+					DebugLocation(50, 26);
+					ID14=(IToken)Match(input,ID,Follow._ID_in_namespace_declaration201);  
+					stream_ID.Add(ID14);
 
 
 					}
@@ -585,9 +608,9 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 			}
 
-			DebugLocation(48, 32);
-			char_literal14=(IToken)Match(input,41,Follow._41_in_namespace_declaration197);  
-			stream_41.Add(char_literal14);
+			DebugLocation(50, 32);
+			char_literal15=(IToken)Match(input,43,Follow._43_in_namespace_declaration206);  
+			stream_43.Add(char_literal15);
 
 
 
@@ -603,20 +626,20 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 49:5: -> ^( NamespaceToken ( ID )* )
+			// 51:5: -> ^( NamespaceToken ( ID )* )
 			{
-				DebugLocation(49, 8);
-				// lokad-codedsl\\Source\\MessageContracts.g:49:8: ^( NamespaceToken ( ID )* )
+				DebugLocation(51, 8);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:51:8: ^( NamespaceToken ( ID )* )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(49, 10);
+				DebugLocation(51, 10);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(NamespaceToken, "NamespaceToken"), root_1);
 
-				DebugLocation(49, 25);
-				// lokad-codedsl\\Source\\MessageContracts.g:49:25: ( ID )*
+				DebugLocation(51, 25);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:51:25: ( ID )*
 				while ( stream_ID.HasNext )
 				{
-					DebugLocation(49, 25);
+					DebugLocation(51, 25);
 					adaptor.AddChild(root_1, stream_ID.NextNode());
 
 				}
@@ -651,7 +674,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("namespace_declaration", 3);
 			LeaveRule_namespace_declaration();
 	    }
-	 	DebugLocation(49, 28);
+	 	DebugLocation(51, 28);
 		} finally { DebugExitRule(GrammarFileName, "namespace_declaration"); }
 		return retval;
 
@@ -665,7 +688,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_using_declaration() {}
 
 	// $ANTLR start "using_declaration"
-	// lokad-codedsl\\Source\\MessageContracts.g:51:1: using_declaration : USING ( ID ( '.' ID )* ) ';' -> ^( UsingToken ( ID )* ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:53:1: using_declaration : USING ( ID ( '.' ID )* ) ';' -> ^( UsingToken ( ID )* ) ;
 	[GrammarRule("using_declaration")]
 	private AstParserRuleReturnScope<object, IToken> using_declaration()
 	{
@@ -677,45 +700,45 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 	    object root_0 = default(object);
 
-	    IToken USING15 = default(IToken);
-	    IToken ID16 = default(IToken);
-	    IToken char_literal17 = default(IToken);
-	    IToken ID18 = default(IToken);
-	    IToken char_literal19 = default(IToken);
+	    IToken USING16 = default(IToken);
+	    IToken ID17 = default(IToken);
+	    IToken char_literal18 = default(IToken);
+	    IToken ID19 = default(IToken);
+	    IToken char_literal20 = default(IToken);
 
-	    object USING15_tree = default(object);
-	    object ID16_tree = default(object);
-	    object char_literal17_tree = default(object);
-	    object ID18_tree = default(object);
-	    object char_literal19_tree = default(object);
-	    RewriteRuleITokenStream stream_41=new RewriteRuleITokenStream(adaptor,"token 41");
-	    RewriteRuleITokenStream stream_40=new RewriteRuleITokenStream(adaptor,"token 40");
+	    object USING16_tree = default(object);
+	    object ID17_tree = default(object);
+	    object char_literal18_tree = default(object);
+	    object ID19_tree = default(object);
+	    object char_literal20_tree = default(object);
+	    RewriteRuleITokenStream stream_43=new RewriteRuleITokenStream(adaptor,"token 43");
+	    RewriteRuleITokenStream stream_42=new RewriteRuleITokenStream(adaptor,"token 42");
 	    RewriteRuleITokenStream stream_USING=new RewriteRuleITokenStream(adaptor,"token USING");
 	    RewriteRuleITokenStream stream_ID=new RewriteRuleITokenStream(adaptor,"token ID");
 
 		try { DebugEnterRule(GrammarFileName, "using_declaration");
-		DebugLocation(51, 24);
+		DebugLocation(53, 24);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:52:5: ( USING ( ID ( '.' ID )* ) ';' -> ^( UsingToken ( ID )* ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:54:5: ( USING ( ID ( '.' ID )* ) ';' -> ^( UsingToken ( ID )* ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:52:7: USING ( ID ( '.' ID )* ) ';'
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:54:7: USING ( ID ( '.' ID )* ) ';'
 			{
-			DebugLocation(52, 7);
-			USING15=(IToken)Match(input,USING,Follow._USING_in_using_declaration227);  
-			stream_USING.Add(USING15);
+			DebugLocation(54, 7);
+			USING16=(IToken)Match(input,USING,Follow._USING_in_using_declaration236);  
+			stream_USING.Add(USING16);
 
-			DebugLocation(52, 13);
-			// lokad-codedsl\\Source\\MessageContracts.g:52:13: ( ID ( '.' ID )* )
+			DebugLocation(54, 13);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:54:13: ( ID ( '.' ID )* )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:52:14: ID ( '.' ID )*
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:54:14: ID ( '.' ID )*
 			{
-			DebugLocation(52, 14);
-			ID16=(IToken)Match(input,ID,Follow._ID_in_using_declaration230);  
-			stream_ID.Add(ID16);
+			DebugLocation(54, 14);
+			ID17=(IToken)Match(input,ID,Follow._ID_in_using_declaration239);  
+			stream_ID.Add(ID17);
 
-			DebugLocation(52, 17);
-			// lokad-codedsl\\Source\\MessageContracts.g:52:17: ( '.' ID )*
+			DebugLocation(54, 17);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:54:17: ( '.' ID )*
 			try { DebugEnterSubRule(4);
 			while (true)
 			{
@@ -723,7 +746,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				try { DebugEnterDecision(4, decisionCanBacktrack[4]);
 				int LA4_0 = input.LA(1);
 
-				if ((LA4_0==40))
+				if ((LA4_0==42))
 				{
 					alt4 = 1;
 				}
@@ -734,15 +757,15 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// lokad-codedsl\\Source\\MessageContracts.g:52:18: '.' ID
+					// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:54:18: '.' ID
 					{
-					DebugLocation(52, 18);
-					char_literal17=(IToken)Match(input,40,Follow._40_in_using_declaration233);  
-					stream_40.Add(char_literal17);
+					DebugLocation(54, 18);
+					char_literal18=(IToken)Match(input,42,Follow._42_in_using_declaration242);  
+					stream_42.Add(char_literal18);
 
-					DebugLocation(52, 22);
-					ID18=(IToken)Match(input,ID,Follow._ID_in_using_declaration235);  
-					stream_ID.Add(ID18);
+					DebugLocation(54, 22);
+					ID19=(IToken)Match(input,ID,Follow._ID_in_using_declaration244);  
+					stream_ID.Add(ID19);
 
 
 					}
@@ -761,9 +784,9 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 			}
 
-			DebugLocation(52, 28);
-			char_literal19=(IToken)Match(input,41,Follow._41_in_using_declaration240);  
-			stream_41.Add(char_literal19);
+			DebugLocation(54, 28);
+			char_literal20=(IToken)Match(input,43,Follow._43_in_using_declaration249);  
+			stream_43.Add(char_literal20);
 
 
 
@@ -779,20 +802,20 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 53:5: -> ^( UsingToken ( ID )* )
+			// 55:5: -> ^( UsingToken ( ID )* )
 			{
-				DebugLocation(53, 8);
-				// lokad-codedsl\\Source\\MessageContracts.g:53:8: ^( UsingToken ( ID )* )
+				DebugLocation(55, 8);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:55:8: ^( UsingToken ( ID )* )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(53, 10);
+				DebugLocation(55, 10);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(UsingToken, "UsingToken"), root_1);
 
-				DebugLocation(53, 21);
-				// lokad-codedsl\\Source\\MessageContracts.g:53:21: ( ID )*
+				DebugLocation(55, 21);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:55:21: ( ID )*
 				while ( stream_ID.HasNext )
 				{
-					DebugLocation(53, 21);
+					DebugLocation(55, 21);
 					adaptor.AddChild(root_1, stream_ID.NextNode());
 
 				}
@@ -827,7 +850,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("using_declaration", 4);
 			LeaveRule_using_declaration();
 	    }
-	 	DebugLocation(53, 24);
+	 	DebugLocation(55, 24);
 		} finally { DebugExitRule(GrammarFileName, "using_declaration"); }
 		return retval;
 
@@ -841,7 +864,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_frag_declaration() {}
 
 	// $ANTLR start "frag_declaration"
-	// lokad-codedsl\\Source\\MessageContracts.g:56:1: frag_declaration : CONST ID '=' ID ID ';' -> ^( FragmentEntry ID ID ID ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:58:1: frag_declaration : CONST ID '=' ID ID ';' -> ^( FragmentEntry ID ID ID ) ;
 	[GrammarRule("frag_declaration")]
 	private AstParserRuleReturnScope<object, IToken> frag_declaration()
 	{
@@ -853,55 +876,55 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 	    object root_0 = default(object);
 
-	    IToken CONST20 = default(IToken);
-	    IToken ID21 = default(IToken);
-	    IToken char_literal22 = default(IToken);
-	    IToken ID23 = default(IToken);
+	    IToken CONST21 = default(IToken);
+	    IToken ID22 = default(IToken);
+	    IToken char_literal23 = default(IToken);
 	    IToken ID24 = default(IToken);
-	    IToken char_literal25 = default(IToken);
+	    IToken ID25 = default(IToken);
+	    IToken char_literal26 = default(IToken);
 
-	    object CONST20_tree = default(object);
-	    object ID21_tree = default(object);
-	    object char_literal22_tree = default(object);
-	    object ID23_tree = default(object);
+	    object CONST21_tree = default(object);
+	    object ID22_tree = default(object);
+	    object char_literal23_tree = default(object);
 	    object ID24_tree = default(object);
-	    object char_literal25_tree = default(object);
-	    RewriteRuleITokenStream stream_42=new RewriteRuleITokenStream(adaptor,"token 42");
-	    RewriteRuleITokenStream stream_41=new RewriteRuleITokenStream(adaptor,"token 41");
+	    object ID25_tree = default(object);
+	    object char_literal26_tree = default(object);
+	    RewriteRuleITokenStream stream_43=new RewriteRuleITokenStream(adaptor,"token 43");
+	    RewriteRuleITokenStream stream_44=new RewriteRuleITokenStream(adaptor,"token 44");
 	    RewriteRuleITokenStream stream_ID=new RewriteRuleITokenStream(adaptor,"token ID");
 	    RewriteRuleITokenStream stream_CONST=new RewriteRuleITokenStream(adaptor,"token CONST");
 
 		try { DebugEnterRule(GrammarFileName, "frag_declaration");
-		DebugLocation(56, 54);
+		DebugLocation(58, 54);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:57:2: ( CONST ID '=' ID ID ';' -> ^( FragmentEntry ID ID ID ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:59:2: ( CONST ID '=' ID ID ';' -> ^( FragmentEntry ID ID ID ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:57:4: CONST ID '=' ID ID ';'
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:59:4: CONST ID '=' ID ID ';'
 			{
-			DebugLocation(57, 4);
-			CONST20=(IToken)Match(input,CONST,Follow._CONST_in_frag_declaration264);  
-			stream_CONST.Add(CONST20);
+			DebugLocation(59, 4);
+			CONST21=(IToken)Match(input,CONST,Follow._CONST_in_frag_declaration273);  
+			stream_CONST.Add(CONST21);
 
-			DebugLocation(57, 10);
-			ID21=(IToken)Match(input,ID,Follow._ID_in_frag_declaration266);  
-			stream_ID.Add(ID21);
+			DebugLocation(59, 10);
+			ID22=(IToken)Match(input,ID,Follow._ID_in_frag_declaration275);  
+			stream_ID.Add(ID22);
 
-			DebugLocation(57, 13);
-			char_literal22=(IToken)Match(input,42,Follow._42_in_frag_declaration268);  
-			stream_42.Add(char_literal22);
+			DebugLocation(59, 13);
+			char_literal23=(IToken)Match(input,44,Follow._44_in_frag_declaration277);  
+			stream_44.Add(char_literal23);
 
-			DebugLocation(57, 17);
-			ID23=(IToken)Match(input,ID,Follow._ID_in_frag_declaration270);  
-			stream_ID.Add(ID23);
-
-			DebugLocation(57, 20);
-			ID24=(IToken)Match(input,ID,Follow._ID_in_frag_declaration272);  
+			DebugLocation(59, 17);
+			ID24=(IToken)Match(input,ID,Follow._ID_in_frag_declaration279);  
 			stream_ID.Add(ID24);
 
-			DebugLocation(57, 23);
-			char_literal25=(IToken)Match(input,41,Follow._41_in_frag_declaration274);  
-			stream_41.Add(char_literal25);
+			DebugLocation(59, 20);
+			ID25=(IToken)Match(input,ID,Follow._ID_in_frag_declaration281);  
+			stream_ID.Add(ID25);
+
+			DebugLocation(59, 23);
+			char_literal26=(IToken)Match(input,43,Follow._43_in_frag_declaration283);  
+			stream_43.Add(char_literal26);
 
 
 
@@ -917,20 +940,20 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 57:27: -> ^( FragmentEntry ID ID ID )
+			// 59:27: -> ^( FragmentEntry ID ID ID )
 			{
-				DebugLocation(57, 30);
-				// lokad-codedsl\\Source\\MessageContracts.g:57:30: ^( FragmentEntry ID ID ID )
+				DebugLocation(59, 30);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:59:30: ^( FragmentEntry ID ID ID )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(57, 32);
+				DebugLocation(59, 32);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(FragmentEntry, "FragmentEntry"), root_1);
 
-				DebugLocation(57, 46);
+				DebugLocation(59, 46);
 				adaptor.AddChild(root_1, stream_ID.NextNode());
-				DebugLocation(57, 49);
+				DebugLocation(59, 49);
 				adaptor.AddChild(root_1, stream_ID.NextNode());
-				DebugLocation(57, 52);
+				DebugLocation(59, 52);
 				adaptor.AddChild(root_1, stream_ID.NextNode());
 
 				adaptor.AddChild(root_0, root_1);
@@ -962,7 +985,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("frag_declaration", 5);
 			LeaveRule_frag_declaration();
 	    }
-	 	DebugLocation(57, 54);
+	 	DebugLocation(59, 54);
 		} finally { DebugExitRule(GrammarFileName, "frag_declaration"); }
 		return retval;
 
@@ -976,7 +999,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_modifier_declaration() {}
 
 	// $ANTLR start "modifier_declaration"
-	// lokad-codedsl\\Source\\MessageContracts.g:59:1: modifier_declaration : IF Modifier '=' ID ( ',' ID )* ';' -> ^( ModifierDefinition Modifier ( ID )* ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:61:1: modifier_declaration : IF Modifier '=' ID ( ',' ID )* ';' -> ^( ModifierDefinition Modifier ( ID )* ) ;
 	[GrammarRule("modifier_declaration")]
 	private AstParserRuleReturnScope<object, IToken> modifier_declaration()
 	{
@@ -988,54 +1011,54 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 	    object root_0 = default(object);
 
-	    IToken IF26 = default(IToken);
-	    IToken Modifier27 = default(IToken);
-	    IToken char_literal28 = default(IToken);
-	    IToken ID29 = default(IToken);
-	    IToken char_literal30 = default(IToken);
-	    IToken ID31 = default(IToken);
-	    IToken char_literal32 = default(IToken);
+	    IToken IF27 = default(IToken);
+	    IToken Modifier28 = default(IToken);
+	    IToken char_literal29 = default(IToken);
+	    IToken ID30 = default(IToken);
+	    IToken char_literal31 = default(IToken);
+	    IToken ID32 = default(IToken);
+	    IToken char_literal33 = default(IToken);
 
-	    object IF26_tree = default(object);
-	    object Modifier27_tree = default(object);
-	    object char_literal28_tree = default(object);
-	    object ID29_tree = default(object);
-	    object char_literal30_tree = default(object);
-	    object ID31_tree = default(object);
-	    object char_literal32_tree = default(object);
-	    RewriteRuleITokenStream stream_42=new RewriteRuleITokenStream(adaptor,"token 42");
+	    object IF27_tree = default(object);
+	    object Modifier28_tree = default(object);
+	    object char_literal29_tree = default(object);
+	    object ID30_tree = default(object);
+	    object char_literal31_tree = default(object);
+	    object ID32_tree = default(object);
+	    object char_literal33_tree = default(object);
+	    RewriteRuleITokenStream stream_43=new RewriteRuleITokenStream(adaptor,"token 43");
+	    RewriteRuleITokenStream stream_44=new RewriteRuleITokenStream(adaptor,"token 44");
 	    RewriteRuleITokenStream stream_41=new RewriteRuleITokenStream(adaptor,"token 41");
 	    RewriteRuleITokenStream stream_ID=new RewriteRuleITokenStream(adaptor,"token ID");
 	    RewriteRuleITokenStream stream_Modifier=new RewriteRuleITokenStream(adaptor,"token Modifier");
-	    RewriteRuleITokenStream stream_39=new RewriteRuleITokenStream(adaptor,"token 39");
 	    RewriteRuleITokenStream stream_IF=new RewriteRuleITokenStream(adaptor,"token IF");
 
 		try { DebugEnterRule(GrammarFileName, "modifier_declaration");
-		DebugLocation(59, 73);
+		DebugLocation(61, 73);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:60:2: ( IF Modifier '=' ID ( ',' ID )* ';' -> ^( ModifierDefinition Modifier ( ID )* ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:62:2: ( IF Modifier '=' ID ( ',' ID )* ';' -> ^( ModifierDefinition Modifier ( ID )* ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:60:4: IF Modifier '=' ID ( ',' ID )* ';'
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:62:4: IF Modifier '=' ID ( ',' ID )* ';'
 			{
-			DebugLocation(60, 4);
-			IF26=(IToken)Match(input,IF,Follow._IF_in_modifier_declaration301);  
-			stream_IF.Add(IF26);
+			DebugLocation(62, 4);
+			IF27=(IToken)Match(input,IF,Follow._IF_in_modifier_declaration310);  
+			stream_IF.Add(IF27);
 
-			DebugLocation(60, 7);
-			Modifier27=(IToken)Match(input,Modifier,Follow._Modifier_in_modifier_declaration303);  
-			stream_Modifier.Add(Modifier27);
+			DebugLocation(62, 7);
+			Modifier28=(IToken)Match(input,Modifier,Follow._Modifier_in_modifier_declaration312);  
+			stream_Modifier.Add(Modifier28);
 
-			DebugLocation(60, 16);
-			char_literal28=(IToken)Match(input,42,Follow._42_in_modifier_declaration305);  
-			stream_42.Add(char_literal28);
+			DebugLocation(62, 16);
+			char_literal29=(IToken)Match(input,44,Follow._44_in_modifier_declaration314);  
+			stream_44.Add(char_literal29);
 
-			DebugLocation(60, 20);
-			ID29=(IToken)Match(input,ID,Follow._ID_in_modifier_declaration307);  
-			stream_ID.Add(ID29);
+			DebugLocation(62, 20);
+			ID30=(IToken)Match(input,ID,Follow._ID_in_modifier_declaration316);  
+			stream_ID.Add(ID30);
 
-			DebugLocation(60, 23);
-			// lokad-codedsl\\Source\\MessageContracts.g:60:23: ( ',' ID )*
+			DebugLocation(62, 23);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:62:23: ( ',' ID )*
 			try { DebugEnterSubRule(5);
 			while (true)
 			{
@@ -1043,7 +1066,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				try { DebugEnterDecision(5, decisionCanBacktrack[5]);
 				int LA5_0 = input.LA(1);
 
-				if ((LA5_0==39))
+				if ((LA5_0==41))
 				{
 					alt5 = 1;
 				}
@@ -1054,15 +1077,15 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// lokad-codedsl\\Source\\MessageContracts.g:60:24: ',' ID
+					// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:62:24: ',' ID
 					{
-					DebugLocation(60, 24);
-					char_literal30=(IToken)Match(input,39,Follow._39_in_modifier_declaration310);  
-					stream_39.Add(char_literal30);
+					DebugLocation(62, 24);
+					char_literal31=(IToken)Match(input,41,Follow._41_in_modifier_declaration319);  
+					stream_41.Add(char_literal31);
 
-					DebugLocation(60, 28);
-					ID31=(IToken)Match(input,ID,Follow._ID_in_modifier_declaration312);  
-					stream_ID.Add(ID31);
+					DebugLocation(62, 28);
+					ID32=(IToken)Match(input,ID,Follow._ID_in_modifier_declaration321);  
+					stream_ID.Add(ID32);
 
 
 					}
@@ -1078,15 +1101,15 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 			} finally { DebugExitSubRule(5); }
 
-			DebugLocation(60, 33);
-			char_literal32=(IToken)Match(input,41,Follow._41_in_modifier_declaration316);  
-			stream_41.Add(char_literal32);
+			DebugLocation(62, 33);
+			char_literal33=(IToken)Match(input,43,Follow._43_in_modifier_declaration325);  
+			stream_43.Add(char_literal33);
 
 
 
 			{
 			// AST REWRITE
-			// elements: ID, Modifier
+			// elements: Modifier, ID
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -1096,22 +1119,22 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 60:37: -> ^( ModifierDefinition Modifier ( ID )* )
+			// 62:37: -> ^( ModifierDefinition Modifier ( ID )* )
 			{
-				DebugLocation(60, 40);
-				// lokad-codedsl\\Source\\MessageContracts.g:60:40: ^( ModifierDefinition Modifier ( ID )* )
+				DebugLocation(62, 40);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:62:40: ^( ModifierDefinition Modifier ( ID )* )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(60, 42);
+				DebugLocation(62, 42);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(ModifierDefinition, "ModifierDefinition"), root_1);
 
-				DebugLocation(60, 61);
+				DebugLocation(62, 61);
 				adaptor.AddChild(root_1, stream_Modifier.NextNode());
-				DebugLocation(60, 70);
-				// lokad-codedsl\\Source\\MessageContracts.g:60:70: ( ID )*
+				DebugLocation(62, 70);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:62:70: ( ID )*
 				while ( stream_ID.HasNext )
 				{
-					DebugLocation(60, 70);
+					DebugLocation(62, 70);
 					adaptor.AddChild(root_1, stream_ID.NextNode());
 
 				}
@@ -1146,7 +1169,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("modifier_declaration", 6);
 			LeaveRule_modifier_declaration();
 	    }
-	 	DebugLocation(60, 73);
+	 	DebugLocation(62, 73);
 		} finally { DebugExitRule(GrammarFileName, "modifier_declaration"); }
 		return retval;
 
@@ -1160,7 +1183,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_entity_declaration() {}
 
 	// $ANTLR start "entity_declaration"
-	// lokad-codedsl\\Source\\MessageContracts.g:62:1: entity_declaration : lc= INTERFACE ID block '{' ( declaration )* '}' -> ^( EntityDefinition[$lc,\"Block\"] ID block ( declaration )* ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:64:1: entity_declaration : lc= INTERFACE ID block '{' ( declaration )* '}' -> ^( EntityDefinition[$lc,\"Block\"] ID block ( declaration )* ) ;
 	[GrammarRule("entity_declaration")]
 	private AstParserRuleReturnScope<object, IToken> entity_declaration()
 	{
@@ -1173,50 +1196,50 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	    object root_0 = default(object);
 
 	    IToken lc = default(IToken);
-	    IToken ID33 = default(IToken);
-	    IToken char_literal35 = default(IToken);
-	    IToken char_literal37 = default(IToken);
-	    AstParserRuleReturnScope<object, IToken> block34 = default(AstParserRuleReturnScope<object, IToken>);
-	    AstParserRuleReturnScope<object, IToken> declaration36 = default(AstParserRuleReturnScope<object, IToken>);
+	    IToken ID34 = default(IToken);
+	    IToken char_literal36 = default(IToken);
+	    IToken char_literal38 = default(IToken);
+	    AstParserRuleReturnScope<object, IToken> block35 = default(AstParserRuleReturnScope<object, IToken>);
+	    AstParserRuleReturnScope<object, IToken> declaration37 = default(AstParserRuleReturnScope<object, IToken>);
 
 	    object lc_tree = default(object);
-	    object ID33_tree = default(object);
-	    object char_literal35_tree = default(object);
-	    object char_literal37_tree = default(object);
-	    RewriteRuleITokenStream stream_43=new RewriteRuleITokenStream(adaptor,"token 43");
+	    object ID34_tree = default(object);
+	    object char_literal36_tree = default(object);
+	    object char_literal38_tree = default(object);
+	    RewriteRuleITokenStream stream_45=new RewriteRuleITokenStream(adaptor,"token 45");
 	    RewriteRuleITokenStream stream_INTERFACE=new RewriteRuleITokenStream(adaptor,"token INTERFACE");
-	    RewriteRuleITokenStream stream_44=new RewriteRuleITokenStream(adaptor,"token 44");
+	    RewriteRuleITokenStream stream_46=new RewriteRuleITokenStream(adaptor,"token 46");
 	    RewriteRuleITokenStream stream_ID=new RewriteRuleITokenStream(adaptor,"token ID");
 	    RewriteRuleSubtreeStream stream_declaration=new RewriteRuleSubtreeStream(adaptor,"rule declaration");
 	    RewriteRuleSubtreeStream stream_block=new RewriteRuleSubtreeStream(adaptor,"rule block");
 		try { DebugEnterRule(GrammarFileName, "entity_declaration");
-		DebugLocation(62, 58);
+		DebugLocation(64, 58);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:63:2: (lc= INTERFACE ID block '{' ( declaration )* '}' -> ^( EntityDefinition[$lc,\"Block\"] ID block ( declaration )* ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:65:2: (lc= INTERFACE ID block '{' ( declaration )* '}' -> ^( EntityDefinition[$lc,\"Block\"] ID block ( declaration )* ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:63:4: lc= INTERFACE ID block '{' ( declaration )* '}'
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:65:4: lc= INTERFACE ID block '{' ( declaration )* '}'
 			{
-			DebugLocation(63, 6);
-			lc=(IToken)Match(input,INTERFACE,Follow._INTERFACE_in_entity_declaration340);  
+			DebugLocation(65, 6);
+			lc=(IToken)Match(input,INTERFACE,Follow._INTERFACE_in_entity_declaration349);  
 			stream_INTERFACE.Add(lc);
 
-			DebugLocation(63, 18);
-			ID33=(IToken)Match(input,ID,Follow._ID_in_entity_declaration342);  
-			stream_ID.Add(ID33);
+			DebugLocation(65, 18);
+			ID34=(IToken)Match(input,ID,Follow._ID_in_entity_declaration351);  
+			stream_ID.Add(ID34);
 
-			DebugLocation(63, 21);
-			PushFollow(Follow._block_in_entity_declaration344);
-			block34=block();
+			DebugLocation(65, 21);
+			PushFollow(Follow._block_in_entity_declaration353);
+			block35=block();
 			PopFollow();
 
-			stream_block.Add(block34.Tree);
-			DebugLocation(63, 27);
-			char_literal35=(IToken)Match(input,43,Follow._43_in_entity_declaration346);  
-			stream_43.Add(char_literal35);
+			stream_block.Add(block35.Tree);
+			DebugLocation(65, 27);
+			char_literal36=(IToken)Match(input,45,Follow._45_in_entity_declaration355);  
+			stream_45.Add(char_literal36);
 
-			DebugLocation(63, 31);
-			// lokad-codedsl\\Source\\MessageContracts.g:63:31: ( declaration )*
+			DebugLocation(65, 31);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:65:31: ( declaration )*
 			try { DebugEnterSubRule(6);
 			while (true)
 			{
@@ -1224,7 +1247,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				try { DebugEnterDecision(6, decisionCanBacktrack[6]);
 				int LA6_0 = input.LA(1);
 
-				if ((LA6_0==CONST||LA6_0==EXTERN||(LA6_0>=ID && LA6_0<=IF)||LA6_0==INTERFACE||LA6_0==NAMESPACE||LA6_0==USING))
+				if ((LA6_0==CLASS||LA6_0==CONST||LA6_0==EXTERN||(LA6_0>=ID && LA6_0<=IF)||LA6_0==INTERFACE||LA6_0==NAMESPACE||LA6_0==USING))
 				{
 					alt6 = 1;
 				}
@@ -1235,14 +1258,14 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// lokad-codedsl\\Source\\MessageContracts.g:63:31: declaration
+					// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:65:31: declaration
 					{
-					DebugLocation(63, 31);
-					PushFollow(Follow._declaration_in_entity_declaration348);
-					declaration36=declaration();
+					DebugLocation(65, 31);
+					PushFollow(Follow._declaration_in_entity_declaration357);
+					declaration37=declaration();
 					PopFollow();
 
-					stream_declaration.Add(declaration36.Tree);
+					stream_declaration.Add(declaration37.Tree);
 
 					}
 					break;
@@ -1257,15 +1280,15 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 			} finally { DebugExitSubRule(6); }
 
-			DebugLocation(63, 44);
-			char_literal37=(IToken)Match(input,44,Follow._44_in_entity_declaration351);  
-			stream_44.Add(char_literal37);
+			DebugLocation(65, 44);
+			char_literal38=(IToken)Match(input,46,Follow._46_in_entity_declaration360);  
+			stream_46.Add(char_literal38);
 
 
 
 			{
 			// AST REWRITE
-			// elements: ID, block, declaration
+			// elements: declaration, ID, block
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -1275,24 +1298,24 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 64:2: -> ^( EntityDefinition[$lc,\"Block\"] ID block ( declaration )* )
+			// 66:2: -> ^( EntityDefinition[$lc,\"Block\"] ID block ( declaration )* )
 			{
-				DebugLocation(64, 5);
-				// lokad-codedsl\\Source\\MessageContracts.g:64:5: ^( EntityDefinition[$lc,\"Block\"] ID block ( declaration )* )
+				DebugLocation(66, 5);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:66:5: ^( EntityDefinition[$lc,\"Block\"] ID block ( declaration )* )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(64, 7);
+				DebugLocation(66, 7);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(EntityDefinition, lc, "Block"), root_1);
 
-				DebugLocation(64, 37);
+				DebugLocation(66, 37);
 				adaptor.AddChild(root_1, stream_ID.NextNode());
-				DebugLocation(64, 40);
+				DebugLocation(66, 40);
 				adaptor.AddChild(root_1, stream_block.NextTree());
-				DebugLocation(64, 46);
-				// lokad-codedsl\\Source\\MessageContracts.g:64:46: ( declaration )*
+				DebugLocation(66, 46);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:66:46: ( declaration )*
 				while ( stream_declaration.HasNext )
 				{
-					DebugLocation(64, 46);
+					DebugLocation(66, 46);
 					adaptor.AddChild(root_1, stream_declaration.NextTree());
 
 				}
@@ -1327,7 +1350,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("entity_declaration", 7);
 			LeaveRule_entity_declaration();
 	    }
-	 	DebugLocation(64, 58);
+	 	DebugLocation(66, 58);
 		} finally { DebugExitRule(GrammarFileName, "entity_declaration"); }
 		return retval;
 
@@ -1341,7 +1364,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_type_declaration() {}
 
 	// $ANTLR start "type_declaration"
-	// lokad-codedsl\\Source\\MessageContracts.g:66:1: type_declaration : ID ( Modifier )? block -> ^( TypeToken ID block ( Modifier )? ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:68:1: type_declaration : ID ( Modifier )? block -> ^( TypeToken ID block ( Modifier )? ) ;
 	[GrammarRule("type_declaration")]
 	private AstParserRuleReturnScope<object, IToken> type_declaration()
 	{
@@ -1353,29 +1376,29 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 	    object root_0 = default(object);
 
-	    IToken ID38 = default(IToken);
-	    IToken Modifier39 = default(IToken);
-	    AstParserRuleReturnScope<object, IToken> block40 = default(AstParserRuleReturnScope<object, IToken>);
+	    IToken ID39 = default(IToken);
+	    IToken Modifier40 = default(IToken);
+	    AstParserRuleReturnScope<object, IToken> block41 = default(AstParserRuleReturnScope<object, IToken>);
 
-	    object ID38_tree = default(object);
-	    object Modifier39_tree = default(object);
+	    object ID39_tree = default(object);
+	    object Modifier40_tree = default(object);
 	    RewriteRuleITokenStream stream_ID=new RewriteRuleITokenStream(adaptor,"token ID");
 	    RewriteRuleITokenStream stream_Modifier=new RewriteRuleITokenStream(adaptor,"token Modifier");
 	    RewriteRuleSubtreeStream stream_block=new RewriteRuleSubtreeStream(adaptor,"rule block");
 		try { DebugEnterRule(GrammarFileName, "type_declaration");
-		DebugLocation(66, 56);
+		DebugLocation(68, 56);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:67:2: ( ID ( Modifier )? block -> ^( TypeToken ID block ( Modifier )? ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:69:2: ( ID ( Modifier )? block -> ^( TypeToken ID block ( Modifier )? ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:67:4: ID ( Modifier )? block
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:69:4: ID ( Modifier )? block
 			{
-			DebugLocation(67, 4);
-			ID38=(IToken)Match(input,ID,Follow._ID_in_type_declaration377);  
-			stream_ID.Add(ID38);
+			DebugLocation(69, 4);
+			ID39=(IToken)Match(input,ID,Follow._ID_in_type_declaration386);  
+			stream_ID.Add(ID39);
 
-			DebugLocation(67, 7);
-			// lokad-codedsl\\Source\\MessageContracts.g:67:7: ( Modifier )?
+			DebugLocation(69, 7);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:69:7: ( Modifier )?
 			int alt7=2;
 			try { DebugEnterSubRule(7);
 			try { DebugEnterDecision(7, decisionCanBacktrack[7]);
@@ -1390,11 +1413,11 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// lokad-codedsl\\Source\\MessageContracts.g:67:7: Modifier
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:69:7: Modifier
 				{
-				DebugLocation(67, 7);
-				Modifier39=(IToken)Match(input,Modifier,Follow._Modifier_in_type_declaration379);  
-				stream_Modifier.Add(Modifier39);
+				DebugLocation(69, 7);
+				Modifier40=(IToken)Match(input,Modifier,Follow._Modifier_in_type_declaration388);  
+				stream_Modifier.Add(Modifier40);
 
 
 				}
@@ -1403,17 +1426,17 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			}
 			} finally { DebugExitSubRule(7); }
 
-			DebugLocation(67, 17);
-			PushFollow(Follow._block_in_type_declaration382);
-			block40=block();
+			DebugLocation(69, 17);
+			PushFollow(Follow._block_in_type_declaration391);
+			block41=block();
 			PopFollow();
 
-			stream_block.Add(block40.Tree);
+			stream_block.Add(block41.Tree);
 
 
 			{
 			// AST REWRITE
-			// elements: Modifier, block, ID
+			// elements: Modifier, ID, block
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -1423,24 +1446,24 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 67:23: -> ^( TypeToken ID block ( Modifier )? )
+			// 69:23: -> ^( TypeToken ID block ( Modifier )? )
 			{
-				DebugLocation(67, 26);
-				// lokad-codedsl\\Source\\MessageContracts.g:67:26: ^( TypeToken ID block ( Modifier )? )
+				DebugLocation(69, 26);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:69:26: ^( TypeToken ID block ( Modifier )? )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(67, 28);
+				DebugLocation(69, 28);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(TypeToken, "TypeToken"), root_1);
 
-				DebugLocation(67, 38);
+				DebugLocation(69, 38);
 				adaptor.AddChild(root_1, stream_ID.NextNode());
-				DebugLocation(67, 41);
+				DebugLocation(69, 41);
 				adaptor.AddChild(root_1, stream_block.NextTree());
-				DebugLocation(67, 47);
-				// lokad-codedsl\\Source\\MessageContracts.g:67:47: ( Modifier )?
+				DebugLocation(69, 47);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:69:47: ( Modifier )?
 				if (stream_Modifier.HasNext)
 				{
-					DebugLocation(67, 47);
+					DebugLocation(69, 47);
 					adaptor.AddChild(root_1, stream_Modifier.NextNode());
 
 				}
@@ -1475,7 +1498,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("type_declaration", 8);
 			LeaveRule_type_declaration();
 	    }
-	 	DebugLocation(67, 56);
+	 	DebugLocation(69, 56);
 		} finally { DebugExitRule(GrammarFileName, "type_declaration"); }
 		return retval;
 
@@ -1489,7 +1512,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_member() {}
 
 	// $ANTLR start "member"
-	// lokad-codedsl\\Source\\MessageContracts.g:69:1: member : ( ID ID -> ^( MemberToken ID ID ) | ID -> ^( FragmentReference ID ) );
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:71:1: member : ( ID ID -> ^( MemberToken ID ID ) | ID -> ^( FragmentReference ID ) );
 	[GrammarRule("member")]
 	private AstParserRuleReturnScope<object, IToken> member()
 	{
@@ -1501,20 +1524,20 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 	    object root_0 = default(object);
 
-	    IToken ID41 = default(IToken);
 	    IToken ID42 = default(IToken);
 	    IToken ID43 = default(IToken);
+	    IToken ID44 = default(IToken);
 
-	    object ID41_tree = default(object);
 	    object ID42_tree = default(object);
 	    object ID43_tree = default(object);
+	    object ID44_tree = default(object);
 	    RewriteRuleITokenStream stream_ID=new RewriteRuleITokenStream(adaptor,"token ID");
 
 		try { DebugEnterRule(GrammarFileName, "member");
-		DebugLocation(69, 1);
+		DebugLocation(71, 1);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:70:2: ( ID ID -> ^( MemberToken ID ID ) | ID -> ^( FragmentReference ID ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:72:2: ( ID ID -> ^( MemberToken ID ID ) | ID -> ^( FragmentReference ID ) )
 			int alt8=2;
 			try { DebugEnterDecision(8, decisionCanBacktrack[8]);
 			int LA8_0 = input.LA(1);
@@ -1527,7 +1550,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				{
 					alt8 = 1;
 				}
-				else if (((LA8_1>=38 && LA8_1<=39)))
+				else if (((LA8_1>=40 && LA8_1<=41)))
 				{
 					alt8 = 2;
 				}
@@ -1549,15 +1572,15 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// lokad-codedsl\\Source\\MessageContracts.g:70:4: ID ID
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:72:4: ID ID
 				{
-				DebugLocation(70, 4);
-				ID41=(IToken)Match(input,ID,Follow._ID_in_member407);  
-				stream_ID.Add(ID41);
-
-				DebugLocation(70, 7);
-				ID42=(IToken)Match(input,ID,Follow._ID_in_member409);  
+				DebugLocation(72, 4);
+				ID42=(IToken)Match(input,ID,Follow._ID_in_member416);  
 				stream_ID.Add(ID42);
+
+				DebugLocation(72, 7);
+				ID43=(IToken)Match(input,ID,Follow._ID_in_member418);  
+				stream_ID.Add(ID43);
 
 
 
@@ -1573,18 +1596,18 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 				root_0 = (object)adaptor.Nil();
-				// 70:10: -> ^( MemberToken ID ID )
+				// 72:10: -> ^( MemberToken ID ID )
 				{
-					DebugLocation(70, 13);
-					// lokad-codedsl\\Source\\MessageContracts.g:70:13: ^( MemberToken ID ID )
+					DebugLocation(72, 13);
+					// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:72:13: ^( MemberToken ID ID )
 					{
 					object root_1 = (object)adaptor.Nil();
-					DebugLocation(70, 15);
+					DebugLocation(72, 15);
 					root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(MemberToken, "MemberToken"), root_1);
 
-					DebugLocation(70, 27);
+					DebugLocation(72, 27);
 					adaptor.AddChild(root_1, stream_ID.NextNode());
-					DebugLocation(70, 30);
+					DebugLocation(72, 30);
 					adaptor.AddChild(root_1, stream_ID.NextNode());
 
 					adaptor.AddChild(root_0, root_1);
@@ -1599,11 +1622,11 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// lokad-codedsl\\Source\\MessageContracts.g:71:4: ID
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:73:4: ID
 				{
-				DebugLocation(71, 4);
-				ID43=(IToken)Match(input,ID,Follow._ID_in_member424);  
-				stream_ID.Add(ID43);
+				DebugLocation(73, 4);
+				ID44=(IToken)Match(input,ID,Follow._ID_in_member433);  
+				stream_ID.Add(ID44);
 
 
 
@@ -1619,16 +1642,16 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 				RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 				root_0 = (object)adaptor.Nil();
-				// 71:7: -> ^( FragmentReference ID )
+				// 73:7: -> ^( FragmentReference ID )
 				{
-					DebugLocation(71, 10);
-					// lokad-codedsl\\Source\\MessageContracts.g:71:10: ^( FragmentReference ID )
+					DebugLocation(73, 10);
+					// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:73:10: ^( FragmentReference ID )
 					{
 					object root_1 = (object)adaptor.Nil();
-					DebugLocation(71, 12);
+					DebugLocation(73, 12);
 					root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(FragmentReference, "FragmentReference"), root_1);
 
-					DebugLocation(71, 30);
+					DebugLocation(73, 30);
 					adaptor.AddChild(root_1, stream_ID.NextNode());
 
 					adaptor.AddChild(root_0, root_1);
@@ -1662,7 +1685,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("member", 9);
 			LeaveRule_member();
 	    }
-	 	DebugLocation(72, 1);
+	 	DebugLocation(74, 1);
 		} finally { DebugExitRule(GrammarFileName, "member"); }
 		return retval;
 
@@ -1676,7 +1699,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_block() {}
 
 	// $ANTLR start "block"
-	// lokad-codedsl\\Source\\MessageContracts.g:75:1: block : lc= '(' ( member ( ',' member )* )? ')' ( representation )? -> ^( BlockToken[$lc,\"Block\"] ( member )* ( representation )? ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:77:1: block : lc= '(' ( member ( ',' member )* )? ')' ( representation )? -> ^( BlockToken[$lc,\"Block\"] ( member )* ( representation )? ) ;
 	[GrammarRule("block")]
 	private AstParserRuleReturnScope<object, IToken> block()
 	{
@@ -1689,34 +1712,34 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	    object root_0 = default(object);
 
 	    IToken lc = default(IToken);
-	    IToken char_literal45 = default(IToken);
-	    IToken char_literal47 = default(IToken);
-	    AstParserRuleReturnScope<object, IToken> member44 = default(AstParserRuleReturnScope<object, IToken>);
-	    AstParserRuleReturnScope<object, IToken> member46 = default(AstParserRuleReturnScope<object, IToken>);
-	    AstParserRuleReturnScope<object, IToken> representation48 = default(AstParserRuleReturnScope<object, IToken>);
+	    IToken char_literal46 = default(IToken);
+	    IToken char_literal48 = default(IToken);
+	    AstParserRuleReturnScope<object, IToken> member45 = default(AstParserRuleReturnScope<object, IToken>);
+	    AstParserRuleReturnScope<object, IToken> member47 = default(AstParserRuleReturnScope<object, IToken>);
+	    AstParserRuleReturnScope<object, IToken> representation49 = default(AstParserRuleReturnScope<object, IToken>);
 
 	    object lc_tree = default(object);
-	    object char_literal45_tree = default(object);
-	    object char_literal47_tree = default(object);
+	    object char_literal46_tree = default(object);
+	    object char_literal48_tree = default(object);
+	    RewriteRuleITokenStream stream_41=new RewriteRuleITokenStream(adaptor,"token 41");
+	    RewriteRuleITokenStream stream_40=new RewriteRuleITokenStream(adaptor,"token 40");
 	    RewriteRuleITokenStream stream_39=new RewriteRuleITokenStream(adaptor,"token 39");
-	    RewriteRuleITokenStream stream_37=new RewriteRuleITokenStream(adaptor,"token 37");
-	    RewriteRuleITokenStream stream_38=new RewriteRuleITokenStream(adaptor,"token 38");
 	    RewriteRuleSubtreeStream stream_member=new RewriteRuleSubtreeStream(adaptor,"rule member");
 	    RewriteRuleSubtreeStream stream_representation=new RewriteRuleSubtreeStream(adaptor,"rule representation");
 		try { DebugEnterRule(GrammarFileName, "block");
-		DebugLocation(75, 4);
+		DebugLocation(77, 4);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:76:5: (lc= '(' ( member ( ',' member )* )? ')' ( representation )? -> ^( BlockToken[$lc,\"Block\"] ( member )* ( representation )? ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:78:5: (lc= '(' ( member ( ',' member )* )? ')' ( representation )? -> ^( BlockToken[$lc,\"Block\"] ( member )* ( representation )? ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:76:9: lc= '(' ( member ( ',' member )* )? ')' ( representation )?
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:78:9: lc= '(' ( member ( ',' member )* )? ')' ( representation )?
 			{
-			DebugLocation(76, 11);
-			lc=(IToken)Match(input,37,Follow._37_in_block452);  
-			stream_37.Add(lc);
+			DebugLocation(78, 11);
+			lc=(IToken)Match(input,39,Follow._39_in_block461);  
+			stream_39.Add(lc);
 
-			DebugLocation(77, 13);
-			// lokad-codedsl\\Source\\MessageContracts.g:77:13: ( member ( ',' member )* )?
+			DebugLocation(79, 13);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:79:13: ( member ( ',' member )* )?
 			int alt10=2;
 			try { DebugEnterSubRule(10);
 			try { DebugEnterDecision(10, decisionCanBacktrack[10]);
@@ -1731,16 +1754,16 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// lokad-codedsl\\Source\\MessageContracts.g:77:14: member ( ',' member )*
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:79:14: member ( ',' member )*
 				{
-				DebugLocation(77, 14);
-				PushFollow(Follow._member_in_block467);
-				member44=member();
+				DebugLocation(79, 14);
+				PushFollow(Follow._member_in_block476);
+				member45=member();
 				PopFollow();
 
-				stream_member.Add(member44.Tree);
-				DebugLocation(77, 21);
-				// lokad-codedsl\\Source\\MessageContracts.g:77:21: ( ',' member )*
+				stream_member.Add(member45.Tree);
+				DebugLocation(79, 21);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:79:21: ( ',' member )*
 				try { DebugEnterSubRule(9);
 				while (true)
 				{
@@ -1748,7 +1771,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 					try { DebugEnterDecision(9, decisionCanBacktrack[9]);
 					int LA9_0 = input.LA(1);
 
-					if ((LA9_0==39))
+					if ((LA9_0==41))
 					{
 						alt9 = 1;
 					}
@@ -1759,18 +1782,18 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// lokad-codedsl\\Source\\MessageContracts.g:77:22: ',' member
+						// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:79:22: ',' member
 						{
-						DebugLocation(77, 22);
-						char_literal45=(IToken)Match(input,39,Follow._39_in_block470);  
-						stream_39.Add(char_literal45);
+						DebugLocation(79, 22);
+						char_literal46=(IToken)Match(input,41,Follow._41_in_block479);  
+						stream_41.Add(char_literal46);
 
-						DebugLocation(77, 26);
-						PushFollow(Follow._member_in_block472);
-						member46=member();
+						DebugLocation(79, 26);
+						PushFollow(Follow._member_in_block481);
+						member47=member();
 						PopFollow();
 
-						stream_member.Add(member46.Tree);
+						stream_member.Add(member47.Tree);
 
 						}
 						break;
@@ -1792,12 +1815,12 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			}
 			} finally { DebugExitSubRule(10); }
 
-			DebugLocation(78, 9);
-			char_literal47=(IToken)Match(input,38,Follow._38_in_block486);  
-			stream_38.Add(char_literal47);
+			DebugLocation(80, 9);
+			char_literal48=(IToken)Match(input,40,Follow._40_in_block495);  
+			stream_40.Add(char_literal48);
 
-			DebugLocation(78, 13);
-			// lokad-codedsl\\Source\\MessageContracts.g:78:13: ( representation )?
+			DebugLocation(80, 13);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:80:13: ( representation )?
 			int alt11=2;
 			try { DebugEnterSubRule(11);
 			try { DebugEnterDecision(11, decisionCanBacktrack[11]);
@@ -1812,14 +1835,14 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// lokad-codedsl\\Source\\MessageContracts.g:78:13: representation
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:80:13: representation
 				{
-				DebugLocation(78, 13);
-				PushFollow(Follow._representation_in_block488);
-				representation48=representation();
+				DebugLocation(80, 13);
+				PushFollow(Follow._representation_in_block497);
+				representation49=representation();
 				PopFollow();
 
-				stream_representation.Add(representation48.Tree);
+				stream_representation.Add(representation49.Tree);
 
 				}
 				break;
@@ -1841,29 +1864,29 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 79:9: -> ^( BlockToken[$lc,\"Block\"] ( member )* ( representation )? )
+			// 81:9: -> ^( BlockToken[$lc,\"Block\"] ( member )* ( representation )? )
 			{
-				DebugLocation(79, 12);
-				// lokad-codedsl\\Source\\MessageContracts.g:79:12: ^( BlockToken[$lc,\"Block\"] ( member )* ( representation )? )
+				DebugLocation(81, 12);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:81:12: ^( BlockToken[$lc,\"Block\"] ( member )* ( representation )? )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(79, 14);
+				DebugLocation(81, 14);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(BlockToken, lc, "Block"), root_1);
 
-				DebugLocation(79, 38);
-				// lokad-codedsl\\Source\\MessageContracts.g:79:38: ( member )*
+				DebugLocation(81, 38);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:81:38: ( member )*
 				while ( stream_member.HasNext )
 				{
-					DebugLocation(79, 38);
+					DebugLocation(81, 38);
 					adaptor.AddChild(root_1, stream_member.NextTree());
 
 				}
 				stream_member.Reset();
-				DebugLocation(79, 46);
-				// lokad-codedsl\\Source\\MessageContracts.g:79:46: ( representation )?
+				DebugLocation(81, 46);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:81:46: ( representation )?
 				if (stream_representation.HasNext)
 				{
-					DebugLocation(79, 46);
+					DebugLocation(81, 46);
 					adaptor.AddChild(root_1, stream_representation.NextTree());
 
 				}
@@ -1898,7 +1921,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("block", 10);
 			LeaveRule_block();
 	    }
-	 	DebugLocation(80, 4);
+	 	DebugLocation(82, 4);
 		} finally { DebugExitRule(GrammarFileName, "block"); }
 		return retval;
 
@@ -1912,7 +1935,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_representation() {}
 
 	// $ANTLR start "representation"
-	// lokad-codedsl\\Source\\MessageContracts.g:82:1: representation : EXPLICIT STRING -> ^( StringRepresentationToken STRING ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:84:1: representation : EXPLICIT STRING -> ^( StringRepresentationToken STRING ) ;
 	[GrammarRule("representation")]
 	private AstParserRuleReturnScope<object, IToken> representation()
 	{
@@ -1924,29 +1947,29 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 	    object root_0 = default(object);
 
-	    IToken EXPLICIT49 = default(IToken);
-	    IToken STRING50 = default(IToken);
+	    IToken EXPLICIT50 = default(IToken);
+	    IToken STRING51 = default(IToken);
 
-	    object EXPLICIT49_tree = default(object);
-	    object STRING50_tree = default(object);
+	    object EXPLICIT50_tree = default(object);
+	    object STRING51_tree = default(object);
 	    RewriteRuleITokenStream stream_EXPLICIT=new RewriteRuleITokenStream(adaptor,"token EXPLICIT");
 	    RewriteRuleITokenStream stream_STRING=new RewriteRuleITokenStream(adaptor,"token STRING");
 
 		try { DebugEnterRule(GrammarFileName, "representation");
-		DebugLocation(82, 57);
+		DebugLocation(84, 57);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:83:2: ( EXPLICIT STRING -> ^( StringRepresentationToken STRING ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:85:2: ( EXPLICIT STRING -> ^( StringRepresentationToken STRING ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:83:4: EXPLICIT STRING
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:85:4: EXPLICIT STRING
 			{
-			DebugLocation(83, 4);
-			EXPLICIT49=(IToken)Match(input,EXPLICIT,Follow._EXPLICIT_in_representation532);  
-			stream_EXPLICIT.Add(EXPLICIT49);
+			DebugLocation(85, 4);
+			EXPLICIT50=(IToken)Match(input,EXPLICIT,Follow._EXPLICIT_in_representation541);  
+			stream_EXPLICIT.Add(EXPLICIT50);
 
-			DebugLocation(83, 13);
-			STRING50=(IToken)Match(input,STRING,Follow._STRING_in_representation534);  
-			stream_STRING.Add(STRING50);
+			DebugLocation(85, 13);
+			STRING51=(IToken)Match(input,STRING,Follow._STRING_in_representation543);  
+			stream_STRING.Add(STRING51);
 
 
 
@@ -1962,16 +1985,16 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 83:20: -> ^( StringRepresentationToken STRING )
+			// 85:20: -> ^( StringRepresentationToken STRING )
 			{
-				DebugLocation(83, 23);
-				// lokad-codedsl\\Source\\MessageContracts.g:83:23: ^( StringRepresentationToken STRING )
+				DebugLocation(85, 23);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:85:23: ^( StringRepresentationToken STRING )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(83, 25);
+				DebugLocation(85, 25);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(StringRepresentationToken, "StringRepresentationToken"), root_1);
 
-				DebugLocation(83, 51);
+				DebugLocation(85, 51);
 				adaptor.AddChild(root_1, stream_STRING.NextNode());
 
 				adaptor.AddChild(root_0, root_1);
@@ -2003,7 +2026,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("representation", 11);
 			LeaveRule_representation();
 	    }
-	 	DebugLocation(83, 57);
+	 	DebugLocation(85, 57);
 		} finally { DebugExitRule(GrammarFileName, "representation"); }
 		return retval;
 
@@ -2017,7 +2040,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_extern_declaration() {}
 
 	// $ANTLR start "extern_declaration"
-	// lokad-codedsl\\Source\\MessageContracts.g:85:1: extern_declaration : EXTERN STRING ';' -> ^( ExternToken STRING ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:87:1: extern_declaration : EXTERN STRING ';' -> ^( ExternToken STRING ) ;
 	[GrammarRule("extern_declaration")]
 	private AstParserRuleReturnScope<object, IToken> extern_declaration()
 	{
@@ -2029,36 +2052,36 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 	    object root_0 = default(object);
 
-	    IToken EXTERN51 = default(IToken);
-	    IToken STRING52 = default(IToken);
-	    IToken char_literal53 = default(IToken);
+	    IToken EXTERN52 = default(IToken);
+	    IToken STRING53 = default(IToken);
+	    IToken char_literal54 = default(IToken);
 
-	    object EXTERN51_tree = default(object);
-	    object STRING52_tree = default(object);
-	    object char_literal53_tree = default(object);
+	    object EXTERN52_tree = default(object);
+	    object STRING53_tree = default(object);
+	    object char_literal54_tree = default(object);
 	    RewriteRuleITokenStream stream_EXTERN=new RewriteRuleITokenStream(adaptor,"token EXTERN");
-	    RewriteRuleITokenStream stream_41=new RewriteRuleITokenStream(adaptor,"token 41");
+	    RewriteRuleITokenStream stream_43=new RewriteRuleITokenStream(adaptor,"token 43");
 	    RewriteRuleITokenStream stream_STRING=new RewriteRuleITokenStream(adaptor,"token STRING");
 
 		try { DebugEnterRule(GrammarFileName, "extern_declaration");
-		DebugLocation(85, 50);
+		DebugLocation(87, 50);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:86:5: ( EXTERN STRING ';' -> ^( ExternToken STRING ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:88:5: ( EXTERN STRING ';' -> ^( ExternToken STRING ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:86:9: EXTERN STRING ';'
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:88:9: EXTERN STRING ';'
 			{
-			DebugLocation(86, 9);
-			EXTERN51=(IToken)Match(input,EXTERN,Follow._EXTERN_in_extern_declaration557);  
-			stream_EXTERN.Add(EXTERN51);
+			DebugLocation(88, 9);
+			EXTERN52=(IToken)Match(input,EXTERN,Follow._EXTERN_in_extern_declaration566);  
+			stream_EXTERN.Add(EXTERN52);
 
-			DebugLocation(86, 16);
-			STRING52=(IToken)Match(input,STRING,Follow._STRING_in_extern_declaration559);  
-			stream_STRING.Add(STRING52);
+			DebugLocation(88, 16);
+			STRING53=(IToken)Match(input,STRING,Follow._STRING_in_extern_declaration568);  
+			stream_STRING.Add(STRING53);
 
-			DebugLocation(86, 23);
-			char_literal53=(IToken)Match(input,41,Follow._41_in_extern_declaration561);  
-			stream_41.Add(char_literal53);
+			DebugLocation(88, 23);
+			char_literal54=(IToken)Match(input,43,Follow._43_in_extern_declaration570);  
+			stream_43.Add(char_literal54);
 
 
 
@@ -2074,16 +2097,16 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 86:27: -> ^( ExternToken STRING )
+			// 88:27: -> ^( ExternToken STRING )
 			{
-				DebugLocation(86, 30);
-				// lokad-codedsl\\Source\\MessageContracts.g:86:30: ^( ExternToken STRING )
+				DebugLocation(88, 30);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:88:30: ^( ExternToken STRING )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(86, 32);
+				DebugLocation(88, 32);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(ExternToken, "ExternToken"), root_1);
 
-				DebugLocation(86, 44);
+				DebugLocation(88, 44);
 				adaptor.AddChild(root_1, stream_STRING.NextNode());
 
 				adaptor.AddChild(root_0, root_1);
@@ -2115,7 +2138,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("extern_declaration", 12);
 			LeaveRule_extern_declaration();
 	    }
-	 	DebugLocation(86, 50);
+	 	DebugLocation(88, 50);
 		} finally { DebugExitRule(GrammarFileName, "extern_declaration"); }
 		return retval;
 
@@ -2129,7 +2152,7 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 	protected virtual void LeaveRule_template_declaration() {}
 
 	// $ANTLR start "template_declaration"
-	// lokad-codedsl\\Source\\MessageContracts.g:88:1: template_declaration : ID '=' STRING ';' -> ^( TemplateToken ID STRING ) ;
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:90:1: template_declaration : ID '=' STRING ';' -> ^( TemplateToken ID STRING ) ;
 	[GrammarRule("template_declaration")]
 	private AstParserRuleReturnScope<object, IToken> template_declaration()
 	{
@@ -2141,43 +2164,43 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 
 	    object root_0 = default(object);
 
-	    IToken ID54 = default(IToken);
-	    IToken char_literal55 = default(IToken);
-	    IToken STRING56 = default(IToken);
-	    IToken char_literal57 = default(IToken);
+	    IToken ID55 = default(IToken);
+	    IToken char_literal56 = default(IToken);
+	    IToken STRING57 = default(IToken);
+	    IToken char_literal58 = default(IToken);
 
-	    object ID54_tree = default(object);
-	    object char_literal55_tree = default(object);
-	    object STRING56_tree = default(object);
-	    object char_literal57_tree = default(object);
-	    RewriteRuleITokenStream stream_42=new RewriteRuleITokenStream(adaptor,"token 42");
-	    RewriteRuleITokenStream stream_41=new RewriteRuleITokenStream(adaptor,"token 41");
+	    object ID55_tree = default(object);
+	    object char_literal56_tree = default(object);
+	    object STRING57_tree = default(object);
+	    object char_literal58_tree = default(object);
+	    RewriteRuleITokenStream stream_43=new RewriteRuleITokenStream(adaptor,"token 43");
+	    RewriteRuleITokenStream stream_44=new RewriteRuleITokenStream(adaptor,"token 44");
 	    RewriteRuleITokenStream stream_ID=new RewriteRuleITokenStream(adaptor,"token ID");
 	    RewriteRuleITokenStream stream_STRING=new RewriteRuleITokenStream(adaptor,"token STRING");
 
 		try { DebugEnterRule(GrammarFileName, "template_declaration");
-		DebugLocation(88, 55);
+		DebugLocation(90, 55);
 		try
 		{
-			// lokad-codedsl\\Source\\MessageContracts.g:89:5: ( ID '=' STRING ';' -> ^( TemplateToken ID STRING ) )
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:91:5: ( ID '=' STRING ';' -> ^( TemplateToken ID STRING ) )
 			DebugEnterAlt(1);
-			// lokad-codedsl\\Source\\MessageContracts.g:89:9: ID '=' STRING ';'
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:91:9: ID '=' STRING ';'
 			{
-			DebugLocation(89, 9);
-			ID54=(IToken)Match(input,ID,Follow._ID_in_template_declaration583);  
-			stream_ID.Add(ID54);
+			DebugLocation(91, 9);
+			ID55=(IToken)Match(input,ID,Follow._ID_in_template_declaration592);  
+			stream_ID.Add(ID55);
 
-			DebugLocation(89, 12);
-			char_literal55=(IToken)Match(input,42,Follow._42_in_template_declaration585);  
-			stream_42.Add(char_literal55);
+			DebugLocation(91, 12);
+			char_literal56=(IToken)Match(input,44,Follow._44_in_template_declaration594);  
+			stream_44.Add(char_literal56);
 
-			DebugLocation(89, 16);
-			STRING56=(IToken)Match(input,STRING,Follow._STRING_in_template_declaration587);  
-			stream_STRING.Add(STRING56);
+			DebugLocation(91, 16);
+			STRING57=(IToken)Match(input,STRING,Follow._STRING_in_template_declaration596);  
+			stream_STRING.Add(STRING57);
 
-			DebugLocation(89, 23);
-			char_literal57=(IToken)Match(input,41,Follow._41_in_template_declaration589);  
-			stream_41.Add(char_literal57);
+			DebugLocation(91, 23);
+			char_literal58=(IToken)Match(input,43,Follow._43_in_template_declaration598);  
+			stream_43.Add(char_literal58);
 
 
 
@@ -2193,18 +2216,18 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 89:27: -> ^( TemplateToken ID STRING )
+			// 91:27: -> ^( TemplateToken ID STRING )
 			{
-				DebugLocation(89, 30);
-				// lokad-codedsl\\Source\\MessageContracts.g:89:30: ^( TemplateToken ID STRING )
+				DebugLocation(91, 30);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:91:30: ^( TemplateToken ID STRING )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(89, 32);
+				DebugLocation(91, 32);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(TemplateToken, "TemplateToken"), root_1);
 
-				DebugLocation(89, 46);
+				DebugLocation(91, 46);
 				adaptor.AddChild(root_1, stream_ID.NextNode());
-				DebugLocation(89, 49);
+				DebugLocation(91, 49);
 				adaptor.AddChild(root_1, stream_STRING.NextNode());
 
 				adaptor.AddChild(root_0, root_1);
@@ -2236,77 +2259,193 @@ public partial class MessageContractsParser : Antlr.Runtime.Parser
 			LeaveRule("template_declaration", 13);
 			LeaveRule_template_declaration();
 	    }
-	 	DebugLocation(89, 55);
+	 	DebugLocation(91, 55);
 		} finally { DebugExitRule(GrammarFileName, "template_declaration"); }
 		return retval;
 
 	}
 	// $ANTLR end "template_declaration"
+
+
+	[Conditional("ANTLR_TRACE")]
+	protected virtual void EnterRule_class_declaration() {}
+	[Conditional("ANTLR_TRACE")]
+	protected virtual void LeaveRule_class_declaration() {}
+
+	// $ANTLR start "class_declaration"
+	// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:93:1: class_declaration : CLASS ID ';' -> ^( ClassToken ID ) ;
+	[GrammarRule("class_declaration")]
+	private AstParserRuleReturnScope<object, IToken> class_declaration()
+	{
+		EnterRule_class_declaration();
+		EnterRule("class_declaration", 14);
+		TraceIn("class_declaration", 14);
+	    AstParserRuleReturnScope<object, IToken> retval = new AstParserRuleReturnScope<object, IToken>();
+	    retval.Start = (IToken)input.LT(1);
+
+	    object root_0 = default(object);
+
+	    IToken CLASS59 = default(IToken);
+	    IToken ID60 = default(IToken);
+	    IToken char_literal61 = default(IToken);
+
+	    object CLASS59_tree = default(object);
+	    object ID60_tree = default(object);
+	    object char_literal61_tree = default(object);
+	    RewriteRuleITokenStream stream_CLASS=new RewriteRuleITokenStream(adaptor,"token CLASS");
+	    RewriteRuleITokenStream stream_43=new RewriteRuleITokenStream(adaptor,"token 43");
+	    RewriteRuleITokenStream stream_ID=new RewriteRuleITokenStream(adaptor,"token ID");
+
+		try { DebugEnterRule(GrammarFileName, "class_declaration");
+		DebugLocation(93, 40);
+		try
+		{
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:94:5: ( CLASS ID ';' -> ^( ClassToken ID ) )
+			DebugEnterAlt(1);
+			// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:94:9: CLASS ID ';'
+			{
+			DebugLocation(94, 9);
+			CLASS59=(IToken)Match(input,CLASS,Follow._CLASS_in_class_declaration622);  
+			stream_CLASS.Add(CLASS59);
+
+			DebugLocation(94, 15);
+			ID60=(IToken)Match(input,ID,Follow._ID_in_class_declaration624);  
+			stream_ID.Add(ID60);
+
+			DebugLocation(94, 18);
+			char_literal61=(IToken)Match(input,43,Follow._43_in_class_declaration626);  
+			stream_43.Add(char_literal61);
+
+
+
+			{
+			// AST REWRITE
+			// elements: ID
+			// token labels: 
+			// rule labels: retval
+			// token list labels: 
+			// rule list labels: 
+			// wildcard labels: 
+			retval.Tree = root_0;
+			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
+
+			root_0 = (object)adaptor.Nil();
+			// 94:22: -> ^( ClassToken ID )
+			{
+				DebugLocation(94, 25);
+				// D:\\_Dokumente\\GitHub\\lokad-codedsl\\Source\\MessageContracts.g:94:25: ^( ClassToken ID )
+				{
+				object root_1 = (object)adaptor.Nil();
+				DebugLocation(94, 27);
+				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(ClassToken, "ClassToken"), root_1);
+
+				DebugLocation(94, 38);
+				adaptor.AddChild(root_1, stream_ID.NextNode());
+
+				adaptor.AddChild(root_0, root_1);
+				}
+
+			}
+
+			retval.Tree = root_0;
+			}
+
+			}
+
+			retval.Stop = (IToken)input.LT(-1);
+
+			retval.Tree = (object)adaptor.RulePostProcessing(root_0);
+			adaptor.SetTokenBoundaries(retval.Tree, retval.Start, retval.Stop);
+
+		}
+		catch (RecognitionException re)
+		{
+			ReportError(re);
+			Recover(input,re);
+		retval.Tree = (object)adaptor.ErrorNode(input, retval.Start, input.LT(-1), re);
+
+		}
+		finally
+		{
+			TraceOut("class_declaration", 14);
+			LeaveRule("class_declaration", 14);
+			LeaveRule_class_declaration();
+	    }
+	 	DebugLocation(94, 40);
+		} finally { DebugExitRule(GrammarFileName, "class_declaration"); }
+		return retval;
+
+	}
+	// $ANTLR end "class_declaration"
 	#endregion Rules
 
 
 	#region Follow sets
 	private static class Follow
 	{
-		public static readonly BitSet _declaration_in_program121 = new BitSet(new ulong[]{0x404580842UL});
-		public static readonly BitSet _modifier_declaration_in_declaration134 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _frag_declaration_in_declaration139 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _type_declaration_in_declaration144 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _entity_declaration_in_declaration149 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _namespace_declaration_in_declaration154 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _extern_declaration_in_declaration160 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _template_declaration_in_declaration165 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _using_declaration_in_declaration170 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _NAMESPACE_in_namespace_declaration184 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_namespace_declaration187 = new BitSet(new ulong[]{0x30000000000UL});
-		public static readonly BitSet _40_in_namespace_declaration190 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_namespace_declaration192 = new BitSet(new ulong[]{0x30000000000UL});
-		public static readonly BitSet _41_in_namespace_declaration197 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _USING_in_using_declaration227 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_using_declaration230 = new BitSet(new ulong[]{0x30000000000UL});
-		public static readonly BitSet _40_in_using_declaration233 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_using_declaration235 = new BitSet(new ulong[]{0x30000000000UL});
-		public static readonly BitSet _41_in_using_declaration240 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _CONST_in_frag_declaration264 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_frag_declaration266 = new BitSet(new ulong[]{0x40000000000UL});
-		public static readonly BitSet _42_in_frag_declaration268 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_frag_declaration270 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_frag_declaration272 = new BitSet(new ulong[]{0x20000000000UL});
-		public static readonly BitSet _41_in_frag_declaration274 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _IF_in_modifier_declaration301 = new BitSet(new ulong[]{0x1000000UL});
-		public static readonly BitSet _Modifier_in_modifier_declaration303 = new BitSet(new ulong[]{0x40000000000UL});
-		public static readonly BitSet _42_in_modifier_declaration305 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_modifier_declaration307 = new BitSet(new ulong[]{0x28000000000UL});
-		public static readonly BitSet _39_in_modifier_declaration310 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_modifier_declaration312 = new BitSet(new ulong[]{0x28000000000UL});
-		public static readonly BitSet _41_in_modifier_declaration316 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _INTERFACE_in_entity_declaration340 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_entity_declaration342 = new BitSet(new ulong[]{0x2000000000UL});
-		public static readonly BitSet _block_in_entity_declaration344 = new BitSet(new ulong[]{0x80000000000UL});
-		public static readonly BitSet _43_in_entity_declaration346 = new BitSet(new ulong[]{0x100404580840UL});
-		public static readonly BitSet _declaration_in_entity_declaration348 = new BitSet(new ulong[]{0x100404580840UL});
-		public static readonly BitSet _44_in_entity_declaration351 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_type_declaration377 = new BitSet(new ulong[]{0x2001000000UL});
-		public static readonly BitSet _Modifier_in_type_declaration379 = new BitSet(new ulong[]{0x2000000000UL});
-		public static readonly BitSet _block_in_type_declaration382 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_member407 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _ID_in_member409 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_member424 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _37_in_block452 = new BitSet(new ulong[]{0x4000080000UL});
-		public static readonly BitSet _member_in_block467 = new BitSet(new ulong[]{0xC000000000UL});
-		public static readonly BitSet _39_in_block470 = new BitSet(new ulong[]{0x80000UL});
-		public static readonly BitSet _member_in_block472 = new BitSet(new ulong[]{0xC000000000UL});
-		public static readonly BitSet _38_in_block486 = new BitSet(new ulong[]{0x402UL});
-		public static readonly BitSet _representation_in_block488 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _EXPLICIT_in_representation532 = new BitSet(new ulong[]{0x20000000UL});
-		public static readonly BitSet _STRING_in_representation534 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _EXTERN_in_extern_declaration557 = new BitSet(new ulong[]{0x20000000UL});
-		public static readonly BitSet _STRING_in_extern_declaration559 = new BitSet(new ulong[]{0x20000000000UL});
-		public static readonly BitSet _41_in_extern_declaration561 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_template_declaration583 = new BitSet(new ulong[]{0x40000000000UL});
-		public static readonly BitSet _42_in_template_declaration585 = new BitSet(new ulong[]{0x20000000UL});
-		public static readonly BitSet _STRING_in_template_declaration587 = new BitSet(new ulong[]{0x20000000000UL});
-		public static readonly BitSet _41_in_template_declaration589 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _declaration_in_program125 = new BitSet(new ulong[]{0x10116020A2UL});
+		public static readonly BitSet _modifier_declaration_in_declaration138 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _frag_declaration_in_declaration143 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _type_declaration_in_declaration148 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _entity_declaration_in_declaration153 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _namespace_declaration_in_declaration158 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _extern_declaration_in_declaration164 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _template_declaration_in_declaration169 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _using_declaration_in_declaration174 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _class_declaration_in_declaration179 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _NAMESPACE_in_namespace_declaration193 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_namespace_declaration196 = new BitSet(new ulong[]{0xC0000000000UL});
+		public static readonly BitSet _42_in_namespace_declaration199 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_namespace_declaration201 = new BitSet(new ulong[]{0xC0000000000UL});
+		public static readonly BitSet _43_in_namespace_declaration206 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _USING_in_using_declaration236 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_using_declaration239 = new BitSet(new ulong[]{0xC0000000000UL});
+		public static readonly BitSet _42_in_using_declaration242 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_using_declaration244 = new BitSet(new ulong[]{0xC0000000000UL});
+		public static readonly BitSet _43_in_using_declaration249 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _CONST_in_frag_declaration273 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_frag_declaration275 = new BitSet(new ulong[]{0x100000000000UL});
+		public static readonly BitSet _44_in_frag_declaration277 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_frag_declaration279 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_frag_declaration281 = new BitSet(new ulong[]{0x80000000000UL});
+		public static readonly BitSet _43_in_frag_declaration283 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _IF_in_modifier_declaration310 = new BitSet(new ulong[]{0x4000000UL});
+		public static readonly BitSet _Modifier_in_modifier_declaration312 = new BitSet(new ulong[]{0x100000000000UL});
+		public static readonly BitSet _44_in_modifier_declaration314 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_modifier_declaration316 = new BitSet(new ulong[]{0xA0000000000UL});
+		public static readonly BitSet _41_in_modifier_declaration319 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_modifier_declaration321 = new BitSet(new ulong[]{0xA0000000000UL});
+		public static readonly BitSet _43_in_modifier_declaration325 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _INTERFACE_in_entity_declaration349 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_entity_declaration351 = new BitSet(new ulong[]{0x8000000000UL});
+		public static readonly BitSet _block_in_entity_declaration353 = new BitSet(new ulong[]{0x200000000000UL});
+		public static readonly BitSet _45_in_entity_declaration355 = new BitSet(new ulong[]{0x4010116020A0UL});
+		public static readonly BitSet _declaration_in_entity_declaration357 = new BitSet(new ulong[]{0x4010116020A0UL});
+		public static readonly BitSet _46_in_entity_declaration360 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_type_declaration386 = new BitSet(new ulong[]{0x8004000000UL});
+		public static readonly BitSet _Modifier_in_type_declaration388 = new BitSet(new ulong[]{0x8000000000UL});
+		public static readonly BitSet _block_in_type_declaration391 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_member416 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_member418 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_member433 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _39_in_block461 = new BitSet(new ulong[]{0x10000200000UL});
+		public static readonly BitSet _member_in_block476 = new BitSet(new ulong[]{0x30000000000UL});
+		public static readonly BitSet _41_in_block479 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _member_in_block481 = new BitSet(new ulong[]{0x30000000000UL});
+		public static readonly BitSet _40_in_block495 = new BitSet(new ulong[]{0x1002UL});
+		public static readonly BitSet _representation_in_block497 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _EXPLICIT_in_representation541 = new BitSet(new ulong[]{0x80000000UL});
+		public static readonly BitSet _STRING_in_representation543 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _EXTERN_in_extern_declaration566 = new BitSet(new ulong[]{0x80000000UL});
+		public static readonly BitSet _STRING_in_extern_declaration568 = new BitSet(new ulong[]{0x80000000000UL});
+		public static readonly BitSet _43_in_extern_declaration570 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_template_declaration592 = new BitSet(new ulong[]{0x100000000000UL});
+		public static readonly BitSet _44_in_template_declaration594 = new BitSet(new ulong[]{0x80000000UL});
+		public static readonly BitSet _STRING_in_template_declaration596 = new BitSet(new ulong[]{0x80000000000UL});
+		public static readonly BitSet _43_in_template_declaration598 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _CLASS_in_class_declaration622 = new BitSet(new ulong[]{0x200000UL});
+		public static readonly BitSet _ID_in_class_declaration624 = new BitSet(new ulong[]{0x80000000000UL});
+		public static readonly BitSet _43_in_class_declaration626 = new BitSet(new ulong[]{0x2UL});
 	}
 	#endregion Follow sets
 }

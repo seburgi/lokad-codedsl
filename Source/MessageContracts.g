@@ -24,6 +24,7 @@ tokens
 	ExternToken;
 	UsingToken;
 	TemplateToken;
+	ClassToken;
 }
 
 @lexer::namespace { MessageContracts }
@@ -42,6 +43,7 @@ declaration
 	| extern_declaration
 	| template_declaration
 	| using_declaration
+	| class_declaration
 	;
 
 namespace_declaration
@@ -87,6 +89,12 @@ extern_declaration
 
 template_declaration
     :   ID '=' STRING ';' -> ^(TemplateToken ID STRING);
+
+class_declaration
+    :   CLASS ID ';' -> ^(ClassToken ID);
+    
+CLASS	
+	:	'class';
 
 EXPLICIT	
 	:	'explicit';

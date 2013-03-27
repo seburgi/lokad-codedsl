@@ -66,6 +66,7 @@
       <DependentUpon>Empty.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneratorUtil.cs" />
+    <Compile Include="IGenerator.cs" />
     <Compile Include="MessageContractAssembler.cs" />
     <Compile Include="MessageContractsLexer.cs" />
     <Compile Include="MessageContractsParser.cs" />

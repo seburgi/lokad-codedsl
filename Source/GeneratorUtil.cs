@@ -1,5 +1,8 @@
-﻿using System.CodeDom.Compiler;
+﻿using System;
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 
@@ -7,13 +10,22 @@ namespace Lokad.CodeDsl
 {
     public static class GeneratorUtil
     {
-        public static string Build(string source, TemplatedGenerator generator)
+        private static readonly List<Type> GeneratorTypeList = typeof (GeneratorUtil).Assembly.GetTypes().Where(x => x.GetInterfaces().Any(y => y.Name == "IGenerator")).ToList();
+
+        private static readonly Type DefaultGenerator = typeof(TemplatedGenerator);
+
+        public static string Build(string source)
         {
             var builder = new StringBuilder();
             using (var stream = new StringWriter(builder))
             using (var writer = new IndentedTextWriter(stream, "    "))
             {
-                generator.Generate(GenerateContext(source), writer);
+                var context = GenerateContext(source);
+                
+                var generatorType = GeneratorTypeList.SingleOrDefault(x => x.Name == context.CurrentGenerator) ?? DefaultGenerator;
+                var generator = (IGenerator)Activator.CreateInstance(generatorType);
+
+                generator.Generate(context, writer);
             }
             return builder.ToString();
         }

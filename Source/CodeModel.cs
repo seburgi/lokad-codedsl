@@ -19,6 +19,8 @@ namespace Lokad.CodeDsl
         }
 
         public Entity CurrentEntity { get { return Entities.Peek(); } }
+
+        public string CurrentGenerator;
         public string CurrentNamespace = "Lokad.Contracts";
         public string CurrentExtern = "Lokad.Contracts";
         public IList<string> Using; 

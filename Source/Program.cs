@@ -228,21 +228,9 @@ namespace Lokad.CodeDsl
             return changed;
         }
 
-        static void Rebuild(string text, string fullPath)
+        static void Rebuild(string dsl, string fullPath)
         {
-            var dsl = text;
-            var generator = new TemplatedGenerator
-                {
-                    GenerateInterfaceForEntityWithModifiers = "?",
-                    TemplateForInterfaceName = "public interface I{0}Aggregate",
-                    TemplateForInterfaceMember = "void When({0} {1});",
-                    ClassNameTemplate = @"[DataContract(Namespace = {1})]
-public partial class {0}",
-                    MemberTemplate = "[DataMember(Order = {0})] public {1} {2} {{ get; private set; }}",
-                };
-
-  
-            File.WriteAllText(Path.ChangeExtension(fullPath, "cs"), GeneratorUtil.Build(dsl, generator));
+            File.WriteAllText(Path.ChangeExtension(fullPath, "cs"), GeneratorUtil.Build(dsl));
         }
 
         private static void CreateTrayIconApp()

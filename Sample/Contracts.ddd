@@ -1,9 +1,13 @@
-﻿// main namespace for commands and messages
+﻿// Select a specific generator, default is TemplatedGenerator
+class TemplatedGenerator
+// main namespace for commands and messages
 namespace Lokad
 // define data contract namespace for all classes
 extern "Lokad"
 
-ClassNameTemplate = @"[DataContract(Namespace = {1})]
+// you can define custom string templates for your generator
+ClassNameTemplate = @"
+    [DataContract(Namespace = {1})]
     public partial class {0}"
 
 // define shortcut for interface IIdentity

@@ -173,6 +173,9 @@ namespace Lokad.CodeDsl
                     var us = string.Join(".", t.Children().Select(s => s.Text));
                     context.Using.Add(us);
                     break;
+                case MessageContractsLexer.ClassToken:
+                    context.CurrentGenerator = t.GetChild(0).Text;
+                    break;
                 default:
                     var node = (CommonErrorNode) t;
                     throw new InvalidOperationException(string.Format("Line: {0}\r\nUnexpected token: {1}", node.start.Line, node.Text));
