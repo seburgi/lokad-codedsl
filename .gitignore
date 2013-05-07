@@ -12,3 +12,5 @@ _ReSharper.*
 *.cache
 ~$*
 *~
+/packages/*
+/packages/repositories.config

@@ -58,7 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeModel.cs" />
     <Compile Include="Empty.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,12 +65,10 @@
       <DependentUpon>Empty.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneratorUtil.cs" />
-    <Compile Include="IGenerator.cs" />
     <Compile Include="MessageContractAssembler.cs" />
     <Compile Include="MessageContractsLexer.cs" />
     <Compile Include="MessageContractsParser.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="TemplatedGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
@@ -82,6 +79,16 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="code_colored.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dsl.Generators\Dsl.Generators.csproj">
+      <Project>{8024D81A-B225-4E57-98C4-839000483D97}</Project>
+      <Name>Dsl.Generators</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dsl.Infrastructure\Dsl.Infrastructure.csproj">
+      <Project>{63eaaeb2-4b46-411f-8757-760f687c59a8}</Project>
+      <Name>Dsl.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -117,7 +117,7 @@ namespace Lokad.CodeDsl
                     for (int i = 0; i < block.ChildCount; i++)
                     {
                         var members = WalkContractMember(block.GetChild(i), context).ToArray();
-                        message.Members.AddRange(members.Where(m => m.Kind == Member.Kinds.Field));
+                        message.Members.AddRange(members.Where(m => m.Kind == Member.Kinds.Field && !message.Members.Any(x => x.Name == m.Name)));
 
                         var stringRepresentations =
                             members.Where(m => m.Kind == Member.Kinds.StringRepresentation).ToArray();

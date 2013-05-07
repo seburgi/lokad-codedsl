@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dsl.Generators", "Dsl.Generators\Dsl.Generators.csproj", "{8024D81A-B225-4E57-98C4-839000483D97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dsl.Infrastructure", "Dsl.Infrastructure\Dsl.Infrastructure.csproj", "{63EAAEB2-4B46-411F-8757-760F687C59A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,14 @@ Global
 		{D64144C0-6C6D-4AF4-B5D9-DF288C839ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D64144C0-6C6D-4AF4-B5D9-DF288C839ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D64144C0-6C6D-4AF4-B5D9-DF288C839ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8024D81A-B225-4E57-98C4-839000483D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8024D81A-B225-4E57-98C4-839000483D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8024D81A-B225-4E57-98C4-839000483D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8024D81A-B225-4E57-98C4-839000483D97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63EAAEB2-4B46-411F-8757-760F687C59A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EAAEB2-4B46-411F-8757-760F687C59A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EAAEB2-4B46-411F-8757-760F687C59A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EAAEB2-4B46-411F-8757-760F687C59A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
